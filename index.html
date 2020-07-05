@@ -4,29 +4,31 @@
 <head>
     <title>Home - Arturo Barbero</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+
+    <script type="text/javascript" src="js/menu.js"></script>
     <link rel="stylesheet" href="css/common.css">
 </head>
 
 <body>
     <div class="container">
         <div class="navbarContainer">
-            <div class="navbar">
+            <div class="navbar" id="myNavbar">
                 <div class="logo">
                     <a href="#home">ABP</a>
                 </div>
                 <!-- Right-sided navbar links -->
                 <div class="menu">
-                    <a href="#about" class="navOption">About</a>
                     <a href="#projects" class="navOption">Projects</a>
+                    <a href="#about" class="navOption">About</a>
                     <a href="#contact" class="navOption">Contact</a>
                 </div>
             
                 <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
                     <i class="fa fa-bars"></i>
                 </a>
             </div>
