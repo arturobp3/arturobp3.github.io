@@ -13,19 +13,17 @@ html, body {
 
 /** Contenedor portada */
 .home-area{
-    background-color: black;/* #f9f9f9; */
+    background-color:#f9f9f9;
     height: 100vh;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center center;
     border: 1px solid black;
 }
 
 /** Contenedor que ocupa el header entero */
 .navbarContainer{
-    border: 2px solid black;
+    height: 8%;
     display: flex;
     justify-content: center;
+    align-content: center;
 }
 
 /**      Contenedor que esta en medio. MENU     */
@@ -33,9 +31,9 @@ html, body {
 .navbar{
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
     width: 75%;
     justify-content: space-between;
+    align-items: center;
 }
 
 .navbarContainer a {
