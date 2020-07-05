@@ -1,10 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
 
-body,h1,h2,h3,h4,h5,h6 {
-    font-family: "Raleway", sans-serif;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-body, html {
+/* ELementos HTML */
+html, body {
+    font-family: "Raleway", sans-serif;
     height: 100%;
-    line-height: 1.8;
 }
+
+/* Contenedor portada */
+.container{
+    background-color: #f9f9f9;
+    height: 100%;
+    border: 1px solid black;
+}
+
+/* Contenedor que ocupa el header entero */
+.navbarContainer{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+/* Contenedor que esta en medio*/
+.navbar{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    width: 75%;
+    justify-content: space-between;
+
+}
+
+.navbarContainer a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #808080;
+}
+
+.navOption {
+    color: #a7a7a7;
+}
+
+.navbar .icon {
+    display: none;
+}
+
+/* https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+    https://www.w3schools.com/w3css/tryw3css_templates_startup.htm
+
+    https://jacobdcastro.com/
+    http://kathleen-huang.com/
+    https://www.youtube.com/watch?v=HtWIrGqbEwI&list=LLnGspaOHk2GiYwmAa2z7Wfw&index=2&t=752s
+
+
+*/
