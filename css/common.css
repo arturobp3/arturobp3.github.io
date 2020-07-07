@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url("variables.css");
 
 * {
     margin: 0;
@@ -11,16 +12,28 @@ html, body {
     height: 100%;
 }
 
+h1{
+    color: var(--black);
+}
+
 /** Contenedor portada */
 .home-area{
-    background-color:#f9f9f9;
+    background-color: var(--grey-background);
     height: 100vh;
-    border: 1px solid black;
+    width: 100vw;
+}
+
+#particles-js {
+    position : absolute;
+    width:100%;
+    height:100%;
 }
 
 /** Contenedor que ocupa el header entero */
 .navbarContainer{
+    position: relative;
     height: 8%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -44,20 +57,40 @@ html, body {
     text-decoration: none;
     font-size: 17px;
     font-weight: bold;
+    margin: 6px;
 }
 
 .navbar a:hover {
-    color: #808080;
+    color: var(--cover-hover-words)
 }
 
 .navOption {
-    color: #a7a7a7;
+    color: var(--cover-words)
 }
 
 .navbar .icon {
     display: none;
 }
 /** --------------------------------------------*/
+
+
+/**           Contenido de la portada           */
+/** --------------------------------------------*/
+
+.contentCover{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 92%;
+}
+
+.titleCover{
+    border: 1px solid black;
+    height: 87%;
+}
+
+
+
 
 
 /**                MENU RESPONSIVE             */
@@ -99,5 +132,5 @@ html, body {
     http://kathleen-huang.com/
     https://www.youtube.com/watch?v=HtWIrGqbEwI&list=LLnGspaOHk2GiYwmAa2z7Wfw&index=2&t=752s
 
-
+    https://stackoverflow.com/questions/40720838/particles-js-as-a-background/40723146
 */
