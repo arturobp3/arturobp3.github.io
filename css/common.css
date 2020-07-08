@@ -83,6 +83,7 @@ h1, h2, h3, h4, h5, h6{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
     height: 93%;
     width: 100vw;
 }
@@ -91,12 +92,14 @@ h1, h2, h3, h4, h5, h6{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border: 1px solid black;
     height: 85%;
     width: 100vw;
 }
 
 .infoCover{
     padding: 2% 25% 1% 25%;
+    border: 1px solid black;
 }
 
 .infoCover h1{
@@ -119,9 +122,11 @@ h1, h2, h3, h4, h5, h6{
     flex-direction: row;
     height: 8%;
     padding: 0% 0% 0% 25%;
+    border: 1px solid black;
 }
 
 .linksCover{
+    border: 1px solid black;
     width: 50%;
 }
 
@@ -131,6 +136,7 @@ h1, h2, h3, h4, h5, h6{
 
 
 .linksCover a img{
+    border: 1px solid black;
     height: 100%;
 }
 
@@ -145,6 +151,7 @@ h1, h2, h3, h4, h5, h6{
 /** --------------------------------------------*/
 
 .arrowCoverContainer{
+    border: 1px solid black;
     display: flex;
     flex-direction: row;
     height: 7%;
@@ -165,6 +172,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .arrowCover a{
+    border: 1px solid black;
     height: auto;
     width: auto;
 }
