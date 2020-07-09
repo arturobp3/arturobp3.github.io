@@ -83,7 +83,6 @@ h1, h2, h3, h4, h5, h6{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
     height: 93%;
     width: 100vw;
 }
@@ -92,14 +91,15 @@ h1, h2, h3, h4, h5, h6{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid black;
     height: 85%;
     width: 100vw;
 }
 
+/**            Letras de la portada             */
+/** --------------------------------------------*/
 .infoCover{
-    padding: 2% 25% 1% 25%;
     border: 1px solid black;
+    padding: 2% 25% 2% 25%;
 }
 
 .infoCover h1{
@@ -118,22 +118,23 @@ h1, h2, h3, h4, h5, h6{
 /** --------------------------------------------*/
 
 .linksCoverContainer{
-    display: flex;
-    flex-direction: row;
-    height: 8%;
-    padding: 0% 0% 0% 25%;
     border: 1px solid black;
+    display: inline-block;
+    height: 8%;
+    width: 100%;
+}
+
+.linksCoverContainer > * {
+    height: 100%;
 }
 
 .linksCover{
     border: 1px solid black;
-    width: 50%;
 }
 
 .linksCover > *{
-    margin-right: 7%;
+    margin-right: 4%;
 }
-
 
 .linksCover a img{
     border: 1px solid black;
@@ -141,17 +142,14 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .linksCover a img:hover{
-    transform: translateY(-0.5em);
+    transform: translateY(-0.4em);
     -webkit-transition: transform 0.2s ease-in-out;
-    border-radius:100%;
-    box-shadow: 0 0.5em 0.5em -0.2em var(--cover-hover-words);
 }
 
 /**                Flecha final                 */
 /** --------------------------------------------*/
 
 .arrowCoverContainer{
-    border: 1px solid black;
     text-align: center;
     height: 7%;
 }
@@ -161,17 +159,11 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .arrowCover {
-    border: 1px solid black;
     text-align: center;
-}
-
-
-.arrowCover a{
 }
 
 .arrowCover a img{
     height: 100%;
-    border: 1px solid black;
 }
 
 
@@ -216,8 +208,8 @@ h1, h2, h3, h4, h5, h6{
     .infoCover h3{ font-size: 1.6em; }
     .infoCover h4{ font-size: 1.1em; }
     .infoCover{padding: 2% 20% 3% 20%; }
-    .linksCoverContainer{ padding: 0% 0% 0% 20%; height: 7%;}
-    .linksCover{ width: 70%; }
+    /*.linksCoverContainer{ padding: 0% 0% 0% 20%; height: 7%;}
+    .linksCover{ width: 70%; }*/
     .arrowCoverContainer{ height: 7%; }
 }
 
@@ -226,8 +218,8 @@ h1, h2, h3, h4, h5, h6{
     .infoCover h3{ font-size: 1.4em; }
     .infoCover h4{ font-size: 0.9em; }
     .infoCover{padding: 2% 15% 3% 15%; }
-    .linksCoverContainer{ padding: 0% 0% 0% 15%; height: 7%; }
-    .linksCover{ width: 75%; }
+    /*.linksCoverContainer{ padding: 0% 0% 0% 15%; height: 7%; }
+    .linksCover{ width: 75%; }*/
     .arrowCoverContainer{ height: 5%; }
 }
 
@@ -237,8 +229,8 @@ h1, h2, h3, h4, h5, h6{
     .infoCover h3{ font-size: 1.2em; }
     .infoCover h4{ font-size: 0.7em; }
     .infoCover{padding: 2% 10% 3% 10%; }
-    .linksCoverContainer{ padding: 0% 0% 0% 10%; height: 6%; }
-    .linksCover{ width: 75%; }
+    /*.linksCoverContainer{ padding: 0% 0% 0% 10%; height: 6%; }
+    .linksCover{ width: 75%; }*/
     .arrowCoverContainer{ height: 4%; }
 }
 
@@ -247,8 +239,8 @@ h1, h2, h3, h4, h5, h6{
     .infoCover h3{ font-size: 1.1em; }
     .infoCover h4{ font-size: 0.7em; }
     .infoCover{padding: 2% 8% 3% 8%; }
-    .linksCoverContainer{ padding: 0% 0% 0% 8%; height: 6%;}
-    .linksCover{ width: 100%; }
+    /*.linksCoverContainer{ padding: 0% 0% 0% 8%; height: 6%;}
+    .linksCover{ width: 100%; }*/
     .arrowCoverContainer{ height: 4%; }
 }
 
