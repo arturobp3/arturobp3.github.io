@@ -154,30 +154,24 @@ h1, h2, h3, h4, h5, h6{
     border: 1px solid black;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     height: 7%;
 }
 
-.arrowCover{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
+.arrowCover {
+    border: 1px solid black;
+    text-align: center;
 }
 
-.arrowCover > *{    
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: center;
+.arrowCover > * {
 }
 
 .arrowCover a{
-    border: 1px solid black;
-    height: auto;
 }
 
 .arrowCover a img{
     height: 100%;
+    border: 1px solid black;
 }
 
 
