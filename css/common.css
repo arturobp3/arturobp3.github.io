@@ -198,6 +198,7 @@ h1, h2, h3, h4, h5, h6{
       float: right;
       display: block;
     }
+    .logo{ display: none; }
     .infoCover{ text-align: center; }
     .infoCover h1{ font-size: 2em; }
     .infoCover h3{ font-size: 1.2em; }
