@@ -152,10 +152,12 @@ h1, h2, h3, h4, h5, h6{
 
 .arrowCoverContainer{
     border: 1px solid black;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    text-align: center;
     height: 7%;
+}
+
+.arrowCoverContainer > * {
+    height: 100%;
 }
 
 .arrowCover {
@@ -163,8 +165,6 @@ h1, h2, h3, h4, h5, h6{
     text-align: center;
 }
 
-.arrowCover > * {
-}
 
 .arrowCover a{
 }
