@@ -53,16 +53,15 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .navbar .logo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     height: 100%;
     width: 0;
 }
 
 .navbar .logo a {
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
     align-items: center;
+    width: fit-content;
 }
 
 .navbar .logo a > *{
@@ -70,8 +69,6 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .navbar .logo > * {
-    margin: 0;
-    padding: 0;
     height: 55%;
     width: fit-content;
 }
