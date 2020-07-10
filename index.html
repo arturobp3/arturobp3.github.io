@@ -17,19 +17,22 @@
 
 <body>
     <div id="particles-js"></div>
+    <script type="text/javascript" src="js/home/app.js"></script>
 
     <!-- Website cover -->
     <div class="home-area">
         <div class="navbarContainer">
             <div class="navbar" id="myNavbar">
                 <div class="logo">
-                    <a href="#home">ABP</a>
+                    <a href="/">
+                        <img src="icons/png/logo.png"/>
+                        <h4>Arturo Barbero Pérez</h4>
+                    </a>
                 </div>
                 <!-- Right-sided navbar links -->
                 <div class="menu">
-                    <a href="#projects" class="navOption">Projects</a>
                     <a href="#about" class="navOption">About</a>
-                    <a href="#contact" class="navOption">Contact</a>
+                    <a href="#projects" class="navOption">Projects</a>
                 </div>
             
                 <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -47,10 +50,17 @@
                 </div>
                 <div class="linksCoverContainer">
                     <div class="linksCover">
-                        <a href="https://github.com/arturobp3" target="_blank"><img src="icons/png/github.png"/></a>
-                        <a href="https://linkedin.com/in/arturobp" target="_blank"><img src="icons/png/linkedin.png"/></a>
-                        <a href="https://twitter.com/arturo_bp3" target="_blank"><img src="icons/png/twitter.png"/></a>
-                        <a href="#" target="_blank"><img src="icons/png/gmail.png"/></a>
+                        <a href="https://github.com/arturobp3" target="_blank"><img src="icons/png/github.png" 
+                            onmouseover="this.src='icons/png/github_color.png';" onmouseout="this.src='icons/png/github.png';"/></a>
+
+                        <a href="https://linkedin.com/in/arturobp" target="_blank"><img src="icons/png/linkedin.png"
+                            onmouseover="this.src='icons/png/linkedin_color.png';" onmouseout="this.src='icons/png/linkedin.png';"/></a>
+
+                        <a href="#" target="_blank"><img src="icons/png/gmail.png" 
+                            onmouseover="this.src='icons/png/gmail_color.png';" onmouseout="this.src='icons/png/gmail.png';"/></a>
+
+                        <a href="https://twitter.com/arturo_bp3" target="_blank"><img src="icons/png/twitter.png"
+                            onmouseover="this.src='icons/png/twitter_color.png';" onmouseout="this.src='icons/png/twitter.png';"/></a>
                     </div>
                 </div>
             </div>
@@ -63,12 +73,8 @@
     </div>
 
 
-
-
-
-
-    
-    <script type="text/javascript" src="js/home/app.js"></script>
-    
+    <div id="projects">
+        <h1 style="font-size: 6.3em; margin-top: 7%; text-align: center;"> Projects. </h1>
+    </div>
 </body>
 </html>

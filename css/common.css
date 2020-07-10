@@ -9,6 +9,7 @@
 /** ELementos HTML */
 html, body {
     font-family: "Raleway", sans-serif;
+    position: fixed;
     overflow-x: hidden;
     height: 100%;
 }
@@ -26,7 +27,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 #particles-js {
-    position : absolute;
+    position: absolute;
     width:100%;
     height:100%;
 }
@@ -34,7 +35,7 @@ h1, h2, h3, h4, h5, h6{
 /** Contenedor que ocupa el header entero */
 .navbarContainer{
     position: relative;
-    height: 7%;
+    height: 10%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -43,18 +44,47 @@ h1, h2, h3, h4, h5, h6{
 
 /**      Contenedor que esta en medio. MENU     */
 /** --------------------------------------------*/
-.navbar{
+.navbar{ 
     display: flex;
     flex-direction: row;
-    width: 75%;
+    width: 85%;
     justify-content: space-between;
     align-items: center;
 }
 
+.navbar .logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 0;
+}
+
+.navbar .logo a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar .logo a > *{
+    margin-right: 3%;
+}
+
+.navbar .logo > * {
+    margin: 0;
+    padding: 0;
+    height: 55%;
+    width: fit-content;
+}
+
+.navbar .logo img{
+    height: 100%;
+}
+
+/** MENU BURGER?*/
 .navbarContainer a {
     float: left;
     display: block;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
@@ -68,6 +98,14 @@ h1, h2, h3, h4, h5, h6{
 
 .navOption {
     color: var(--black)
+}
+
+.navbar .menu{
+    width: 85%;
+}
+
+.navbar .menu > *{
+    float: right;
 }
 
 .navbar .icon {
@@ -84,7 +122,7 @@ h1, h2, h3, h4, h5, h6{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 93%;
+    height: 90%;
     width: 100vw;
 }
 
@@ -129,18 +167,15 @@ h1, h2, h3, h4, h5, h6{
     width: 75%;
 }
 
-.linksCover > *{
-    margin-right: 4%;
-}
-
 .linksCover a img{
     height: 100%;
 }
 
-.linksCover a img:hover{
-    transform: translateY(-0.4em);
-    -webkit-transition: transform 0.2s ease-in-out;
+.linksCover > *{
+    margin-right: 4%;
 }
+
+
 
 /**                Flecha final                 */
 /** --------------------------------------------*/
@@ -198,7 +233,6 @@ h1, h2, h3, h4, h5, h6{
       float: right;
       display: block;
     }
-    .logo{ display: none; }
     .infoCover{ text-align: center; }
     .infoCover h1{ font-size: 2em; }
     .infoCover h3{ font-size: 1.2em; }
@@ -211,6 +245,7 @@ h1, h2, h3, h4, h5, h6{
         width: 100%;
         text-align: center;
     }
+    .navbar .logo{ display: none; }
 }
 
 
