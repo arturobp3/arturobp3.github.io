@@ -12,9 +12,6 @@ html, body {
     position: fixed;
     overflow-x: hidden;
     height: 100%;
-}
-
-html{
     height: -webkit-fill-available;
 }
 
