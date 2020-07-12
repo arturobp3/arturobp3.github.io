@@ -28,7 +28,6 @@ h1, h2, h3, h4, h5, h6{
     background-color: var(--grey-background);
     min-height: -webkit-fill-available;
     height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-    height: calc(var(--vh, 1vh) * 100);
     width: 100vw;
 }
 
