@@ -13,7 +13,7 @@ function openCloseToggleMenu() {
     } else {
       x.className = "hamburger hamburger--emphatic";
       document.getElementById("sidebar").style.visibility ="hidden";
-      document.getElementById("sidebar").style.transform = "translateX(20rem)";
+      document.getElementById("sidebar").style.transform = "translateX(30rem)";
       document.getElementById("contentCover").style.filter = "none";
       document.getElementById("particles-js").style.filter = "none";
       document.body.style.overflowY = "unset";
