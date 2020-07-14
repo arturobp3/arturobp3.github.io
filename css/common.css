@@ -82,7 +82,6 @@ button{
     height: 40px; 
 }
 
-/** MENU BURGER?*/
 .navbar .menu a {
     text-decoration: none;
     font-size: 17px;
@@ -126,12 +125,12 @@ button{
     text-decoration: none;
     background: var(--verdeTundra);
     clip-path: polygon(50% 0, 100% 0, 100% 100%, 25% 100%);
-    height: 100vh;
+    height: 100%;
     width: 100%;
     
     transition-timing-function: cubic-bezier(10,2,3,1);
     transform: translateX(0rem);
-    z-index: 1;
+    z-index: 2;
     transition: 0.5s;
 }
 
@@ -145,7 +144,6 @@ button{
 
 .home-area .mySidebar .logo{
     border-top: 0.5px solid;
-    background: var(--verdeTundraOscuro);
     height: 8%;
     width: 100%;
 }
@@ -166,12 +164,13 @@ button{
 /** --------------------------------------------*/
 
 .contentCover{
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 90%;
     width: 100vw;
+    border: 1px solid black;
 }
 
 .titleCover{
@@ -282,6 +281,9 @@ button{
       float: right;
       display: block;
     }
+    .contentCover{
+        height: 100%;
+    }
     .infoCover{ text-align: center; }
     .infoCover h1{ font-size: 2em; }
     .infoCover h3{ font-size: 1.2em; }
@@ -294,12 +296,17 @@ button{
         width: 100%;
         text-align: center;
     }
+    .navbarContainer{
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+    }
     .navbar .logo{ display: none; }
     .navbar #toggleMenu { display: inline-block; }
     .navbar {
         position: absolute; 
         width: 100%; 
-        z-index: 2; 
+        z-index: 3; 
     }
     .navOption {
         text-align: end;
