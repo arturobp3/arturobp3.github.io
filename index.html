@@ -37,7 +37,7 @@
                 </div>
             
                 <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-                <button onclick="openToggleMenu()" id="toggleMenu" class="hamburger hamburger--emphatic" type="button">
+                <button onclick="openCloseToggleMenu()" id="toggleMenu" class="hamburger hamburger--emphatic" type="button">
                     <span class="hamburger-box">
                       <span class="hamburger-inner"></span>
                     </span>
@@ -46,18 +46,18 @@
             <!-- mobile menu -->
             <div class="mySidebar" id="sidebar">
                 <div id="links">
-                    <a href="./" onclick="closeToggleMenu()" class="navOption">Home</a>
-                    <a href="#projects" onclick="closeToggleMenu()" class="navOption">Projects</a>
-                    <a href="#about" onclick="closeToggleMenu()" class="navOption">About</a>
+                    <a href="./" onclick="openCloseToggleMenu()" class="navOption">Home</a>
+                    <a href="#projects" onclick="openCloseToggleMenu()" class="navOption">Projects</a>
+                    <a href="#about" onclick="openCloseToggleMenu()" class="navOption">About</a>
                 </div>
                 <div class="logo">
-                    <a href="./" onclick="closeToggleMenu()">
+                    <a href="./" onclick="openCloseToggleMenu()">
                         <img src="icons/png/logo_blanco.png"/>
                     </a>
                 </div>
             </div>
         </div>
-        <div class="contentCover">
+        <div class="contentCover" id="contentCover">
             <div class="titleCover">
                 <div class="infoCover">
                     <h4>Hi there! My name's</h4>
@@ -90,7 +90,7 @@
 
 
     <div id="projects">
-        <h1 style="height: 100vh; font-size: 630%; margin-top: 7%; text-align: center;"> Projects. </h1>
+        <h1 style="position: absolute; height: 100%; font-size: 630%; margin-top: 7%; text-align: center;"> Projects. </h1>
     </div>
 </body>
 </html>
