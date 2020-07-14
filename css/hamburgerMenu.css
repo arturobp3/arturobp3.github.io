@@ -24,18 +24,19 @@
       background-color: var(--grey-background); }
   
   .hamburger-box {
-    width: 40px;
-    height: 24px;
+    width: 23px;
+    height: 20px;
     display: inline-block;
-    position: relative; }
+    position: relative; 
+  }
   
   .hamburger-inner {
     display: block;
     top: 50%;
     margin-top: -2px; }
     .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-      width: 40px;
-      height: 4px;
+      width: 23px;
+      height: 3.5px;
       background-color: var(--black);
       border-radius: 4px;
       position: absolute;
@@ -46,7 +47,7 @@
       content: "";
       display: block; }
     .hamburger-inner::before {
-      top: -10px; }
+      top: -8px; }
     .hamburger-inner::after {
       bottom: -10px; }
   
@@ -61,7 +62,7 @@
         left: 0;
         transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, left 0.125s 0.175s ease-in; }
       .hamburger--emphatic .hamburger-inner::after {
-        top: 10px;
+        top: 8px;
         right: 0;
         transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, right 0.125s 0.175s ease-in; }
     .hamburger--emphatic.is-active .hamburger-inner {
