@@ -34,6 +34,10 @@ h1, h2, h3, h4, h5, h6{
     height:100%;
 }
 
+button{
+    outline:none;
+}
+
 /** Contenedor que ocupa el header entero */
 .navbarContainer{    
     position: relative;
@@ -52,16 +56,16 @@ h1, h2, h3, h4, h5, h6{
     align-items: center;
     justify-content: space-between;
     width: 85%;
+    border: 1px solid black;
 }
 
-.navbar .logo{
+.logo{
     height: 100%;
-    width: 230px; /* or whatever width you want. */
-    max-width: 250px; /* or whatever width you want. */
+    width: 230px;
     display: inline-block;
 }
 
-.navbar .logo a {
+.logo a {
     display: -webkit-flex;
     flex-direction: row;
     align-items: center;
@@ -69,12 +73,12 @@ h1, h2, h3, h4, h5, h6{
     text-decoration: none;
 }
 
-.navbar .logo a > *{
+.logo a > *{
     margin-right: 4%;
 }
 
 
-.navbar .logo img{
+.logo img{
     height: 40px; 
 }
 
@@ -90,7 +94,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .navOption {
-    color: var(--black)
+    color: var(--black);
 }
 
 .navbar .menu{
@@ -106,9 +110,55 @@ h1, h2, h3, h4, h5, h6{
     margin-right: 4%;
 }
 
-.navbar .icon {
+.navbar #toggleMenu {
     display: none;
 }
+
+/** MENU LATERAL RESPONSIVE */
+
+
+.home-area .mySidebar {
+    color: var(--grey-background);
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-decoration: none;
+    background: var(--verdeTundra);
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 25% 100%);
+    height: 100vh;
+    width: 100%;
+    
+    transition-timing-function: cubic-bezier(10,2,3,1);
+    transform: translateX(0rem);
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.home-area .mySidebar #links {
+    display: -webkit-flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 92%;
+    width: 100%;
+}
+
+.home-area .mySidebar .logo{
+    border-top: 0.5px solid;
+    background: var(--verdeTundraOscuro);
+    height: 8%;
+    width: 100%;
+}
+
+.home-area .mySidebar .logo > *{
+    margin-left: 60%;
+}
+
+.home-area .mySidebar .logo p{
+    color: var(--grey-background);
+    font-size: 17px;
+}
+
 /** --------------------------------------------*/
 
 
@@ -226,7 +276,7 @@ h1, h2, h3, h4, h5, h6{
 /** When the screen is less than 600 pixels wide, hide all links, except for the first one 
 **("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px){
-    .navbar { width: 90%; }
+    .navbar { width: 90%;}
     .navbar .menu a {display: none;}
     .navbar a.icon {
       float: right;
@@ -245,25 +295,22 @@ h1, h2, h3, h4, h5, h6{
         text-align: center;
     }
     .navbar .logo{ display: none; }
+    .navbar #toggleMenu { display: inline-block; }
+    .navbar {
+        position: absolute; 
+        width: 100%; 
+        z-index: 2; 
+    }
+    .navOption {
+        text-align: end;
+        color: var(--grey-background);
+        padding: 12%;
+        width: 75%;
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: bold;
+    }
 }
-
-
-/** The "responsive" class is added to the topnav with JavaScript when the user clicks on 
-**the icon. This class makes the topnav look good on small screens (display the links vertically
-**instead of horizontally) */
-@media screen and (max-width: 600px) {
-    .navbar.responsive {position: relative;}
-    .navbar.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .navbar.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-  }
 
 @media screen and (max-width: 391px){
     .infoCover h1{ font-size: 2em; }

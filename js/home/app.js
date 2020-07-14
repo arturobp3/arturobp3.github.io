@@ -1,6 +1,5 @@
 
 
-
 /* CUANDO EL DOCUMENTO ESTÁ PREPARADO */
 $( document ).ready(function() {
   checkParticles();
