@@ -10,8 +10,8 @@ $( document ).ready(function() {
 /* CUANDO SE CAMBIE EL TAMAÑO DE PANTALLA */
 $( window ).resize(function() {
   checkParticles();
+  closeToggleMenu();
 });
-
 
 
 /* Comprueba el tamaño de la pantalla y pone las particulas en consecuencia */

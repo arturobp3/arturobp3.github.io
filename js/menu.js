@@ -1,5 +1,4 @@
-/* Toggle between adding and removing the "responsive" class to topnav when the user 
-clicks on the icon */
+/* Cierra o abre el menu según su estado */
 function openCloseToggleMenu() {
     var x = document.getElementById("toggleMenu");
     if (x.className === "hamburger hamburger--emphatic") {
@@ -18,4 +17,15 @@ function openCloseToggleMenu() {
       document.getElementById("particles-js").style.filter = "none";
       document.body.style.overflowY = "unset";
     }
+  }
+
+  /* Cierra el menu hamburguer */
+  function closeToggleMenu(){
+    var x = document.getElementById("toggleMenu");
+    x.className = "hamburger hamburger--emphatic";
+    document.getElementById("sidebar").style.visibility ="hidden";
+    document.getElementById("sidebar").style.transform = "translateX(30rem)";
+    document.getElementById("contentCover").style.filter = "none";
+    document.getElementById("particles-js").style.filter = "none";
+    document.body.style.overflowY = "unset";
   }
