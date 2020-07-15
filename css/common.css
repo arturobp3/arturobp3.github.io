@@ -23,6 +23,8 @@ h1, h2, h3, h4, h5, h6{
 
 /** Contenedor portada */
 .home-area{
+    border: 1px solid black;
+    margin-bottom: 6%;
     min-height: -webkit-fill-available;
     height: 100%; /* Fallback for browsers that do not support Custom Properties */
     width: 100vw;

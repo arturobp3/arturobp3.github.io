@@ -5,13 +5,13 @@
 #projects .container h1{
     text-align: center;
     font-size: 7.5em;
-    margin-top: 3%;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
     font-weight: 700;
     position: relative;
 }
 
 #projects .container{
+    border:1px solid black;
     display: -webkit-flex;
     flex-direction: column;
     height: 100%;
@@ -20,6 +20,7 @@
 }
 
 #projects .container .content{
+    border:1px solid black;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: stretch;
@@ -32,81 +33,155 @@
 
 #projects .container .content > div{
     background: var(--grey-background);
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border-radius: 25px 25px 25px 25px;
     -moz-border-radius: 25px 25px 25px 25px;
     -webkit-border-radius: 25px 25px 25px 25px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
+    font-size: 50px;
+    font-weight: 900;
 }
 
-#projects .container .content .faceDetection,
+/*#projects .container .content .faceDetection,
 #projects .container .content .portfolio{
-    
     grid-column: 1 / 3;
+}*/
+
+
+/**               FACE DETECTION                */
+/** --------------------------------------------*/
+#projects .container .content .faceDetection{
+    background: var(--grey-background);
+    color: #15d1dd;
 }
 
 /** 15d1dd */
 #projects .container .content .faceDetection:hover{
-    -webkit-box-shadow: 0px 0px 23px 9px rgba(21,209,221,1);
+    /*-webkit-box-shadow: 0px 0px 23px 9px rgba(21,209,221,1);
     -moz-box-shadow: 0px 0px 23px 9px rgba(21,209,221,1);
-    box-shadow: 0px 0px 23px 9px rgba(21,209,221,1);
+    box-shadow: 0px 0px 23px 9px rgba(21,209,221,1);*/
+    background: #15d1dd;
+    color: white;
 }
 
-/** ed6f6f */
+/**               JOE ASSISTANT                 */
+/** --------------------------------------------*/
+#projects .container .content .joeAssistant{
+    background: var(--grey-background);
+    color: #ed6f6f;
+}
+
+/** ed6f6f */ /** Cambiar grid on hover???? */
 #projects .container .content .joeAssistant:hover{
-    -webkit-box-shadow: 0px 0px 23px 9px rgba(237,111,111,0.84);
+    /*-webkit-box-shadow: 0px 0px 23px 9px rgba(237,111,111,0.84);
     -moz-box-shadow: 0px 0px 23px 9px rgba(237,111,111,0.84);
-    box-shadow: 0px 0px 23px 9px rgba(237,111,111,0.84);
+    box-shadow: 0px 0px 23px 9px rgba(237,111,111,0.84);*/
+    background: #ed6f6f;
+    color: white;
 
 }
 
+
+/**               MATCH IT UP                   */
+/** --------------------------------------------*/
+#projects .container .content .matchItUp{
+    background: var(--grey-background);
+    color: #87c51e;
+}
 
 /** 87c51e */
 #projects .container .content .matchItUp:hover{
-    -webkit-box-shadow: 0px 0px 23px 9px rgba(135,197,30,1);
+    /*-webkit-box-shadow: 0px 0px 23px 9px rgba(135,197,30,1);
     -moz-box-shadow: 0px 0px 23px 9px rgba(135,197,30,1);
-    box-shadow: 0px 0px 23px 9px rgba(135,197,30,1);
-    
+    box-shadow: 0px 0px 23px 9px rgba(135,197,30,1);*/
+    background: #87c51e;
+    color: white;
+}
+
+/**                 PORTFOLIO                   */
+/** --------------------------------------------*/
+#projects .container .content .portfolio{
+    background: var(--grey-background);
+    color: #ffc802;
 }
 
 /** ffc802 */
 #projects .container .content .portfolio:hover{
-    -webkit-box-shadow: 0px 0px 23px 9px rgba(255,200,2,1);
+    /*-webkit-box-shadow: 0px 0px 23px 9px rgba(255,200,2,1);
     -moz-box-shadow: 0px 0px 23px 9px rgba(255,200,2,1);
-    box-shadow: 0px 0px 23px 9px rgba(255,200,2,1);
+    box-shadow: 0px 0px 23px 9px rgba(255,200,2,1);*/
+    background: #ffc802;
+    color: white;
 }
 
 
+/**                  ASTEYO                     */
+/** --------------------------------------------*/
+#projects .container .content .asteyo{
+    background: var(--grey-background);
+    color: #a05ecc;
+}
+
 /** a05ecc */
 #projects .container .content .asteyo:hover{
-    -webkit-box-shadow: 0px 0px 23px 9px rgba(160,94,204,1);
+    /*-webkit-box-shadow: 0px 0px 23px 9px rgba(160,94,204,1);
     -moz-box-shadow: 0px 0px 23px 9px rgba(160,94,204,1);
-    box-shadow: 0px 0px 23px 9px rgba(160,94,204,1);
-    
+    box-shadow: 0px 0px 23px 9px rgba(160,94,204,1);*/
+    background: #a05ecc;
+    color: white;
+}
+
+/**               PRODUCT CATALOG               */
+/** --------------------------------------------*/
+#projects .container .content .productCatalogue{
+    background: var(--grey-background);
+    color: #70ceb4; 
 }
 
 /** 70ceb4 */
 #projects .container .content .productCatalogue:hover{
-    -webkit-box-shadow: 0px 0px 23px 9px rgba(112,206,180,1);
+    /*-webkit-box-shadow: 0px 0px 23px 9px rgba(112,206,180,1);
     -moz-box-shadow: 0px 0px 23px 9px rgba(112,206,180,1);
-    box-shadow: 0px 0px 23px 9px rgba(112,206,180,1);
-    
+    box-shadow: 0px 0px 23px 9px rgba(112,206,180,1);*/
+    background: #70ceb4;
+    color: white;
+}
+
+/**               TRAFFIC SIMULATOR             */
+/** --------------------------------------------*/
+#projects .container .content .trafficSim{
+    background: var(--grey-background);
+    color: #ff9400; 
 }
 
 /** ff9400 */
 #projects .container .content .trafficSim:hover{
-    -webkit-box-shadow: 0px 0px 23px 9px rgba(255,148,0,1);
--moz-box-shadow: 0px 0px 23px 9px rgba(255,148,0,1);
-box-shadow: 0px 0px 23px 9px rgba(255,148,0,1);
-    
+    /*-webkit-box-shadow: 0px 0px 23px 9px rgba(255,148,0,1);
+    -moz-box-shadow: 0px 0px 23px 9px rgba(255,148,0,1);
+    box-shadow: 0px 0px 23px 9px rgba(255,148,0,1);*/
+    background: #ff9400;
+    color: white;
+}
+
+/**                  TO-DO LIST                 */
+/** --------------------------------------------*/
+#projects .container .content .todoList{
+    background: var(--grey-background);
+    color: #fe7c60; 
 }
 
 /** fe7c60 */
 #projects .container .content .todoList:hover{
-    -webkit-box-shadow: 0px 0px 23px 9px rgba(254,124,96,1);
+    /*-webkit-box-shadow: 0px 0px 23px 9px rgba(254,124,96,1);
     -moz-box-shadow: 0px 0px 23px 9px rgba(254,124,96,1);
-    box-shadow: 0px 0px 23px 9px rgba(254,124,96,1);
-    
+    box-shadow: 0px 0px 23px 9px rgba(254,124,96,1);*/
+    background: #fe7c60;
+    color: white;
 }
 
 
