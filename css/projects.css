@@ -26,7 +26,8 @@
     grid-gap:3em;
     height: 100%;
     width: 100%;
-    margin-bottom: 7%;
+    margin-top: 6%;
+    margin-bottom: 6%;
 }
 
 #projects .container .content > div{
