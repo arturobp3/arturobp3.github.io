@@ -1,3 +1,6 @@
+
+/*["#ff0000", "#0000ff", "#00ff00", "#66ccdd"]*/
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
 @import url("variables.css");
 
@@ -23,8 +26,8 @@ h1, h2, h3, h4, h5, h6{
 
 /** Contenedor portada */
 .home-area{
-    border: 1px solid black;
-    margin-bottom: 6%;
+    background: var(--grey-background);
+    margin-bottom: 5%;
     min-height: -webkit-fill-available;
     height: 100%; /* Fallback for browsers that do not support Custom Properties */
     width: 100vw;
