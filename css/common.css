@@ -13,7 +13,7 @@
 html, body {
     font-family: "Montserrat", sans-serif;
     position: fixed;
-    overflow-x: hidden;
+    overflow: scroll;
     height: 100%;
     height: -webkit-fill-available;
 }
