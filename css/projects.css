@@ -5,7 +5,7 @@
 }
 
 .titleTexto h4{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
 }
 
@@ -90,8 +90,10 @@
 }
 
 #projects .container .content .projectContent .textoImg .titleTexto .readMore{
+    color: var(--trafficSim);
+    font-size: 35px;
     padding-top: 10%;
-    display: none;
+    display: block;
 }
 
 #projects .container .content .projectContent .textoImg .titleTexto{

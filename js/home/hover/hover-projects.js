@@ -10,18 +10,23 @@ $(document).ready(function(){
 
     /* JOE ASSISTANT */
     $(joeAssistant).hover(function(){
-        $(joeAssistantCircles.concat(" .circle3")).css("clip-path", "circle(600px at 50% 50%)");
-        $(joeAssistantTitle).css("color", "#f9f9f9");
-        $(joeAssistantTitle).css("transition", "color 0.45s");
-        $(joeAssistantDescription).css("display", "block");
-        $(joeAssistantDescription).css("color", "#f9f9f9");
-        $(joeAssistantReadMore).css("display", "block");
-        $(joeAssistantReadMore).css("color", "#f9f9f9");
-    }, function(){
-        $(joeAssistantCircles.concat(" .circle3")).css("clip-path", "circle(300px at 110% 50%)");
-        $(joeAssistantTitle).css("color", "#00c4f8");
-        $(joeAssistantDescription).css("display", "none");
-        $(joeAssistantReadMore).css("display", "none");
-    }
+            $(joeAssistantCircles.concat(" .circle3")).css("clip-path", "circle(600px at 50% 50%)");
+            $(joeAssistantTitle).css("color", "#f9f9f9");
+            $(joeAssistantTitle).css("transition", "color 0.45s");
+            $(joeAssistantDescription).css("display", "block");
+            $(joeAssistantDescription).css("color", "#f9f9f9");
+            $(joeAssistantReadMore).css("display", "block");
+            $(joeAssistantReadMore).css("color", "#f9f9f9");
+            $(joeAssistantReadMore).css("font-size", "25px");
+            $(joeAssistantReadMore).text("Read more");
+            $(joeAssistantReadMore).css("transition", "color 0.45s");
+        }, function(){
+            $(joeAssistantCircles.concat(" .circle3")).css("clip-path", "circle(300px at 110% 50%)");
+            $(joeAssistantTitle).css("color", "#00c4f8");
+            $(joeAssistantDescription).css("display", "none");
+            $(joeAssistantReadMore).css("font-size", "35px");
+            $(joeAssistantReadMore).css("color", "#ffc802");
+            $(joeAssistantReadMore).text("Coming soon !");
+        }
     );
 });
