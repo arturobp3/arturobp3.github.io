@@ -10,7 +10,6 @@
 }
 
 #projects .container{
-    border:3px solid black;
     display: -webkit-flex;
     flex-direction: column;
     margin: 0 auto;
@@ -18,7 +17,6 @@
 }
 
 #projects .container .content{
-    border:3px solid blue;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -98,7 +96,7 @@
     color: var(--trafficSim);
     font-size: 35px;
     padding-top: 5%;
-    display: block;
+    display: none;
 }
 
 #projects .container .content .projectContent .textoImg .titleTexto{
@@ -144,7 +142,7 @@
 
 #projects .container .content .faceDetection .circles .circle3{
     background: var(--faceDetection);
-    clip-path: circle(150px at 81% 40%);
+    clip-path: circle(120px at 81% 40%);
 }
 
 /**               JOE ASSISTANT                 */
@@ -174,6 +172,10 @@
 #projects .container .content .joeAssistant .circles .circle3{
     background: var(--joeAssistant);
     clip-path: circle(300px at 110% 50%);
+}
+
+#projects .container .content .joeAssistant .projectContent .textoImg .titleTexto #readMoreJoeAssistant{
+    display: block;
 }
 
 
