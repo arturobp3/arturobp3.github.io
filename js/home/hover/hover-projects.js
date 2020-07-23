@@ -39,7 +39,7 @@ $(document).ready(function(){
     /* JOE ASSISTANT */
     $(joeAssistant).hover(function(){
         /* CUANDO SE ACTIVA EL HOVER */
-            $(joeAssistantCircles.concat(" .circle3")).css("clip-path", "circle(600px at 50% 50%)");
+            $(joeAssistantCircles.concat(" .circle3")).css("clip-path", "circle(800px at 50% 50%)");
             $(joeAssistantTitle).css("color", "#f9f9f9");
             $(joeAssistantTitle).css("transition", "color 0.45s");
             $(joeAssistantTitle).css("transition", "0.3s");
