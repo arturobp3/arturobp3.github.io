@@ -181,18 +181,33 @@
 
 /**               MATCH IT UP                   */
 /** --------------------------------------------*/
-#projects .container .content .matchItUp{
+#projects .container .content .matchItUp h3{
     color: var(--matchitup);
 }
 
-/** 87c51e */
-#projects .container .content .matchItUp:hover{
-    /*-webkit-box-shadow: 0px 0px 23px 9px rgba(135,197,30,1);
-    -moz-box-shadow: 0px 0px 23px 9px rgba(135,197,30,1);
-    box-shadow: 0px 0px 23px 9px rgba(135,197,30,1);*/
-    background: var(--matchitup);
-    color: white;
+#projects .container .content .matchItUp p{
+    color: var(--grey-background);
 }
+
+#projects .container .content .matchItUp{
+    z-index: 0;
+}
+
+#projects .container .content .matchItUp .circles .circle1{
+    background: var(--matchitup);
+    clip-path: circle(30px at 10% 10%);
+}
+
+#projects .container .content .matchItUp .circles .circle2{
+    background: var(--matchitup);
+    clip-path: circle(25px at 40% 90%);
+}
+
+#projects .container .content .matchItUp .circles .circle3{
+    background: var(--matchitup);
+    clip-path: circle(120px at 81% 40%);
+}
+
 
 /**                 PORTFOLIO                   */
 /** --------------------------------------------*/
@@ -227,32 +242,60 @@
 
 /**               PRODUCT CATALOG               */
 /** --------------------------------------------*/
-#projects .container .content .productCatalogue{
+#projects .container .content .productCatalogue h3{
     color: var(--productCatalog);
 }
 
-/** 70ceb4 */
-#projects .container .content .productCatalogue:hover{
-    /*-webkit-box-shadow: 0px 0px 23px 9px rgba(112,206,180,1);
-    -moz-box-shadow: 0px 0px 23px 9px rgba(112,206,180,1);
-    box-shadow: 0px 0px 23px 9px rgba(112,206,180,1);*/
+#projects .container .content .productCatalogue p{
+    color: var(--grey-background);
+}
+
+#projects .container .content .productCatalogue{
+    z-index: 0;
+}
+
+#projects .container .content .productCatalogue .circles .circle1{
     background: var(--productCatalog);
-    color: white;
+    clip-path: circle(30px at 10% 10%);
+}
+
+#projects .container .content .productCatalogue .circles .circle2{
+    background: var(--productCatalog);
+    clip-path: circle(25px at 40% 90%);
+}
+
+#projects .container .content .productCatalogue .circles .circle3{
+    background: var(--productCatalog);
+    clip-path: circle(120px at 81% 40%);
 }
 
 /**               TRAFFIC SIMULATOR             */
 /** --------------------------------------------*/
-#projects .container .content .trafficSim{
+#projects .container .content .trafficSim h3{
     color: var(--trafficSim);
 }
 
-/** ff9400 */
-#projects .container .content .trafficSim:hover{
-    /*-webkit-box-shadow: 0px 0px 23px 9px rgba(255,148,0,1);
-    -moz-box-shadow: 0px 0px 23px 9px rgba(255,148,0,1);
-    box-shadow: 0px 0px 23px 9px rgba(255,148,0,1);*/
+#projects .container .content .trafficSim p{
+    color: var(--grey-background);
+}
+
+#projects .container .content .trafficSim{
+    z-index: 0;
+}
+
+#projects .container .content .trafficSim .circles .circle1{
     background: var(--trafficSim);
-    color: white;
+    clip-path: circle(30px at 10% 10%);
+}
+
+#projects .container .content .trafficSim .circles .circle2{
+    background: var(--trafficSim);
+    clip-path: circle(25px at 40% 90%);
+}
+
+#projects .container .content .trafficSim .circles .circle3{
+    background: var(--trafficSim);
+    clip-path: circle(120px at 81% 40%);
 }
 
 /**                  TO-DO LIST                 */
