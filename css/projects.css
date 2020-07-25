@@ -132,7 +132,7 @@
 
 #projects .container .content .faceDetection .circles .circle1{
     background: var(--faceDetection);
-    clip-path: circle(30px at 10% 10%);
+    clip-path: circle(25px at 10% 10%);
 }
 
 #projects .container .content .faceDetection .circles .circle2{
@@ -162,18 +162,24 @@
 
 #projects .container .content .joeAssistant .circles .circle1{
     background: var(--joeAssistant);
-    clip-path: circle(20px at 60% 15%);
+    clip-path: circle(20px at 60% 70%);
 }
 
 #projects .container .content .joeAssistant .circles .circle2{
     background: var(--joeAssistant);
-    clip-path: circle(20px at 15% 85%);
+    clip-path: circle(20px at 10% 85%);
+}
+
+#projects .container .content .joeAssistant .circles .circle4{
+    background: var(--joeAssistant);
+    clip-path: circle(25px at 45% 15%);
 }
 
 #projects .container .content .joeAssistant .circles .circle3{
     background: var(--joeAssistant);
     clip-path: circle(300px at 90% 1%);
 }
+
 
 #projects .container .content .joeAssistant .projectContent .textoImg .titleTexto #readMoreJoeAssistant{
     display: block;
@@ -196,12 +202,12 @@
 
 #projects .container .content .matchItUp .circles .circle1{
     background: var(--matchitup);
-    clip-path: circle(30px at 10% 10%);
+    clip-path: circle(20px at 50% 20%);
 }
 
 #projects .container .content .matchItUp .circles .circle2{
     background: var(--matchitup);
-    clip-path: circle(25px at 40% 90%);
+    clip-path: circle(25px at 20% 80%);
 }
 
 #projects .container .content .matchItUp .circles .circle3{
@@ -227,12 +233,17 @@
 
 #projects .container .content .portfolio .circles .circle1{
     background: var(--portfolio);
-    clip-path: circle(20px at 60% 15%);
+    clip-path: circle(20px at 60% 70%);
 }
 
 #projects .container .content .portfolio .circles .circle2{
     background: var(--portfolio);
-    clip-path: circle(20px at 15% 85%);
+    clip-path: circle(20px at 10% 85%);
+}
+
+#projects .container .content .portfolio .circles .circle4{
+    background: var(--portfolio);
+    clip-path: circle(25px at 40% 15%);
 }
 
 #projects .container .content .portfolio .circles .circle3{
@@ -256,12 +267,12 @@
 
 #projects .container .content .asteyo .circles .circle1{
     background: var(--asteyo);
-    clip-path: circle(30px at 10% 10%);
+    clip-path: circle(25px at 43% 16%);
 }
 
 #projects .container .content .asteyo .circles .circle2{
     background: var(--asteyo);
-    clip-path: circle(25px at 40% 90%);
+    clip-path: circle(25px at 20% 83%);
 }
 
 #projects .container .content .asteyo .circles .circle3{
@@ -285,12 +296,12 @@
 
 #projects .container .content .productCatalogue .circles .circle1{
     background: var(--productCatalog);
-    clip-path: circle(30px at 10% 10%);
+    clip-path: circle(20px at 50% 15%);
 }
 
 #projects .container .content .productCatalogue .circles .circle2{
     background: var(--productCatalog);
-    clip-path: circle(25px at 40% 90%);
+    clip-path: circle(25px at 30% 85%);
 }
 
 #projects .container .content .productCatalogue .circles .circle3{
@@ -314,12 +325,12 @@
 
 #projects .container .content .trafficSim .circles .circle1{
     background: var(--trafficSim);
-    clip-path: circle(30px at 10% 10%);
+    clip-path: circle(25px at 25% 20%);
 }
 
 #projects .container .content .trafficSim .circles .circle2{
     background: var(--trafficSim);
-    clip-path: circle(25px at 40% 90%);
+    clip-path: circle(25px at 55% 85%);
 }
 
 #projects .container .content .trafficSim .circles .circle3{
@@ -343,12 +354,12 @@
 
 #projects .container .content .todoList .circles .circle1{
     background: var(--todoList);
-    clip-path: circle(30px at 10% 10%);
+    clip-path: circle(20px at 15% 15%);
 }
 
 #projects .container .content .todoList .circles .circle2{
     background: var(--todoList);
-    clip-path: circle(25px at 40% 90%);
+    clip-path: circle(25px at 55% 85%);
 }
 
 #projects .container .content .todoList .circles .circle3{
