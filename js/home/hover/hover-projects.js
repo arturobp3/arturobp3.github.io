@@ -226,7 +226,7 @@ $(document).ready(function(){
             $(portfolioCircles.concat(" .circle3")).css("clip-path", "circle(300px at 90% 1%)");
             $(portfolioTitle).css("color", "#70ceb4");
             $(portfolioTitle).css("transition", "0.5s");
-            $(portfolioTitle).css("transform", "translateY(3rem)");
+            $(portfolioTitle).css("transform", "translateY(1.5rem)");
             $(portfolioDescription).css("visibility", "hidden");
             $(portfolioReadMore).css("color", "#f9f9f9");
             $(portfolioReadMore).css("display", "none");

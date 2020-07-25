@@ -251,6 +251,10 @@
     clip-path: circle(300px at 90% 1%);
 }
 
+#projects .container .content .portfolio .projectContent .textoImg .titleTexto .titleProject{
+    transform: translateY(1.5rem);
+}
+
 /**                  ASTEYO                     */
 /** --------------------------------------------*/
 #projects .container .content .asteyo h3{

@@ -29,3 +29,8 @@ function checkParticles(){
       console.log('particles.js loaded - callback');
   });
 }
+
+
+function changeColor(color){
+  $(".loading-screen").css("background-color", color);
+}
