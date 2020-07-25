@@ -34,6 +34,27 @@ var trafficSimDescription = "#projects .container .content .trafficSim .projectC
 var trafficSimReadMore = "#projects .container .content .trafficSim .projectContent .textoImg .titleTexto #readMoreProjects"
 var trafficSimImg = "#projects .container .content .trafficSim .projectContent .textoImg .image > img"
 
+var portfolio = "#projects .container .content .portfolio"
+var portfolioCircles = "#projects .container .content .portfolio .projectContent .circles"
+var portfolioTitle = "#projects .container .content .portfolio .projectContent .titleProject"
+var portfolioDescription = "#projects .container .content .portfolio .projectContent .descripcion"
+var portfolioReadMore = "#projects .container .content .portfolio .projectContent .textoImg .titleTexto #readMoreProjects"
+var portfolioImg = "#projects .container .content .portfolio .projectContent .textoImg .image > img"
+
+var todoList = "#projects .container .content .todoList"
+var todoListCircles = "#projects .container .content .todoList .projectContent .circles"
+var todoListTitle = "#projects .container .content .todoList .projectContent .titleProject"
+var todoListDescription = "#projects .container .content .todoList .projectContent .descripcion"
+var todoListReadMore = "#projects .container .content .todoList .projectContent .textoImg .titleTexto #readMoreProjects"
+var todoListImg = "#projects .container .content .todoList .projectContent .textoImg .image > img"
+
+var asteyo = "#projects .container .content .asteyo"
+var asteyoCircles = "#projects .container .content .asteyo .projectContent .circles"
+var asteyoTitle = "#projects .container .content .asteyo .projectContent .titleProject"
+var asteyoDescription = "#projects .container .content .asteyo .projectContent .descripcion"
+var asteyoReadMore = "#projects .container .content .asteyo .projectContent .textoImg .titleTexto #readMoreProjects"
+var asteyoImg = "#projects .container .content .asteyo .projectContent .textoImg .image > img"
+
 $(document).ready(function(){
 
     /* JOE ASSISTANT */
@@ -52,8 +73,10 @@ $(document).ready(function(){
             $(joeAssistantReadMore).css("font-size", "25px");
             $(joeAssistantReadMore).text("Read more");
             $(joeAssistantReadMore).css("transition", "color 0.45s");
+            $(joeAssistantImg).css("transform", "scale(1.5)");
+            $(joeAssistantImg).css("transition", "transform 0.3s");
         }, function(){
-            $(joeAssistantCircles.concat(" .circle3")).css("clip-path", "circle(300px at 110% 50%)");
+            $(joeAssistantCircles.concat(" .circle3")).css("clip-path", "circle(300px at 90% 1%)");
             $(joeAssistantTitle).css("color", "#00c4f8");
             $(joeAssistantTitle).css("transition", "0.5s");
             $(joeAssistantDescription).css("visibility", "hidden");
@@ -62,6 +85,8 @@ $(document).ready(function(){
             $(joeAssistantReadMore).css("font-size", "35px");
             $(joeAssistantReadMore).css("color", "#ffc802");
             $(joeAssistantReadMore).text("Coming soon !");
+            $(joeAssistantImg).css("transform", "scale(1)");
+            $(joeAssistantImg).css("transition", "transform 0.5s");
         }
     );
 
@@ -180,4 +205,92 @@ $(document).ready(function(){
             $(trafficSimImg).css("transition", "transform 0.5s");
         }
     );
+
+            /* PORTFOLIO */
+    $(portfolio).hover(function(){
+            /* CUANDO SE ACTIVA EL HOVER */
+            $(portfolioCircles.concat(" .circle3")).css("clip-path", "circle(800px at 50% 50%)");
+            $(portfolioTitle).css("color", "#f9f9f9");
+            $(portfolioTitle).css("transition", "color 0.45s");
+            $(portfolioTitle).css("transition", "0.3s");
+            $(portfolioTitle).css("transform", "translateY(0rem)");
+            $(portfolioDescription).css("color", "#f9f9f9");
+            $(portfolioDescription).css("visibility", "visible");
+            $(portfolioReadMore).css("display", "block");
+            $(portfolioReadMore).css("color", "#f9f9f9");
+            $(portfolioReadMore).css("font-size", "25px");
+            $(portfolioReadMore).css("transition", "color 0.45s");
+            $(portfolioImg).css("transform", "scale(1.3)");
+            $(portfolioImg).css("transition", "transform 0.3s");
+    }, function(){
+            $(portfolioCircles.concat(" .circle3")).css("clip-path", "circle(300px at 90% 1%)");
+            $(portfolioTitle).css("color", "#70ceb4");
+            $(portfolioTitle).css("transition", "0.5s");
+            $(portfolioTitle).css("transform", "translateY(3rem)");
+            $(portfolioDescription).css("visibility", "hidden");
+            $(portfolioReadMore).css("color", "#f9f9f9");
+            $(portfolioReadMore).css("display", "none");
+            $(portfolioImg).css("transform", "scale(1)");
+            $(portfolioImg).css("transition", "transform 0.5s");
+        }
+    );
+
+        /* TO-DO-LIST */
+    $(todoList).hover(function(){
+            /* CUANDO SE ACTIVA EL HOVER */
+            $(todoListCircles.concat(" .circle3")).css("clip-path", "circle(600px at 50% 50%)");
+            $(todoListTitle).css("color", "#f9f9f9");
+            $(todoListTitle).css("transition", "color 0.45s");
+            $(todoListTitle).css("transition", "0.3s");
+            $(todoListTitle).css("transform", "translateY(0rem)");
+            $(todoListDescription).css("color", "#f9f9f9");
+            $(todoListDescription).css("visibility", "visible");
+            $(todoListReadMore).css("display", "block");
+            $(todoListReadMore).css("color", "#f9f9f9");
+            $(todoListReadMore).css("font-size", "25px");
+            $(todoListReadMore).css("transition", "color 0.45s");
+            $(todoListImg).css("transform", "scale(1.3)");
+            $(todoListImg).css("transition", "transform 0.3s");
+    }, function(){
+            $(todoListCircles.concat(" .circle3")).css("clip-path", "circle(120px at 81% 40%)");
+            $(todoListTitle).css("color", "#3b5998");
+            $(todoListTitle).css("transition", "0.5s");
+            $(todoListTitle).css("transform", "translateY(3rem)");
+            $(todoListDescription).css("visibility", "hidden");
+            $(todoListReadMore).css("color", "#f9f9f9");
+            $(todoListReadMore).css("display", "none");
+            $(todoListImg).css("transform", "scale(1)");
+            $(todoListImg).css("transition", "transform 0.5s");
+        }
+    );
+
+            /* ASTEYO */
+    $(asteyo).hover(function(){
+            /* CUANDO SE ACTIVA EL HOVER */
+            $(asteyoCircles.concat(" .circle3")).css("clip-path", "circle(600px at 50% 50%)");
+            $(asteyoTitle).css("color", "#f9f9f9");
+            $(asteyoTitle).css("transition", "color 0.45s");
+            $(asteyoTitle).css("transition", "0.3s");
+            $(asteyoTitle).css("transform", "translateY(0rem)");
+            $(asteyoDescription).css("color", "#f9f9f9");
+            $(asteyoDescription).css("visibility", "visible");
+            $(asteyoReadMore).css("display", "block");
+            $(asteyoReadMore).css("color", "#f9f9f9");
+            $(asteyoReadMore).css("font-size", "25px");
+            $(asteyoReadMore).css("transition", "color 0.45s");
+            $(asteyoImg).css("transform", "scale(1.3)");
+            $(asteyoImg).css("transition", "transform 0.3s");
+    }, function(){
+            $(asteyoCircles.concat(" .circle3")).css("clip-path", "circle(120px at 81% 40%)");
+            $(asteyoTitle).css("color", "#a05ecc");
+            $(asteyoTitle).css("transition", "0.5s");
+            $(asteyoTitle).css("transform", "translateY(3rem)");
+            $(asteyoDescription).css("visibility", "hidden");
+            $(asteyoReadMore).css("color", "#f9f9f9");
+            $(asteyoReadMore).css("display", "none");
+            $(asteyoImg).css("transform", "scale(1)");
+            $(asteyoImg).css("transition", "transform 0.5s");
+        }
+    );
+
 });

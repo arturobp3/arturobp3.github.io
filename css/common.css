@@ -257,7 +257,7 @@ button{
     .infoCover h4{ font-size: 1.1em; }
     .infoCover{padding: 2% 20% 3% 20%; }
     .linksCoverContainer{ height: 7%;}
-    .linksCover{ width: 80%; }
+    .linksCover{ width: 100%; }
     .arrowCoverContainer{ height: 6%; }
 }
 
@@ -267,7 +267,7 @@ button{
     .infoCover h4{ font-size: 0.9em; }
     .infoCover{padding: 2% 15% 3% 15%; }
     .linksCoverContainer{ height: 7%; }
-    .linksCover{ width: 85%; }
+    .linksCover{ width: 100%; }
     .linksCover a img{ height: 50px; }
     .arrowCoverContainer{ height: 5%; }
 }
@@ -293,7 +293,7 @@ button{
     .infoCover h4{ font-size: 0.75em; }
     .infoCover{padding: 2% 10% 7% 10%; }
     .linksCoverContainer{ height: 6%; }
-    .linksCover{ width: 90%; }
+    .linksCover{ width: 100%; }
     .arrowCoverContainer{ height: 4%; }
     .linksCoverContainer > *{ 
         width: 100%;
@@ -331,7 +331,7 @@ button{
     .infoCover h4{ font-size: 0.75em; }
     .infoCover{padding: 2% 8% 7% 8%; }
     .linksCoverContainer{ height: 6%;}
-    .linksCover{ width: 92%; }
+    .linksCover{ width: 100%; }
     .arrowCoverContainer{ height: 4%; }
     .linksCoverContainer > *{ 
         width: 100%;
