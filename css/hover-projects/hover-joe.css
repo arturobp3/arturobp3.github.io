@@ -1,0 +1,54 @@
+
+#projects .container .content .joeAssistant:hover .projectContent .circles .circle3 {
+    clip-path: circle(800px at 50% 50%);
+}
+
+#projects .container .content .joeAssistant .projectContent .circles .circle3{
+    clip-path: circle(300px at 90% 1%);
+}
+
+#projects .container .content .joeAssistant:hover .projectContent .textoImg .titleTexto .titleProject{
+    color: var(--grey-background);
+    transition: color 0.45s;
+    transition: 0.3s;
+    transform: translateY(0rem);
+}
+
+#projects .container .content .joeAssistant .projectContent .textoImg .titleTexto .titleProject{
+    color: var(--joeAssistant);
+    transition: 0.5s;
+    transform: translateY(3rem);
+}
+
+#projects .container .content .joeAssistant:hover .projectContent .textoImg .titleTexto .descripcion{
+    display: block;
+    color: var(--grey-background);
+    visibility: visible;
+}
+
+#projects .container .content .joeAssistant .projectContent .textoImg .titleTexto .descripcion {
+    visibility: hidden;
+}
+
+#projects .container .content .joeAssistant:hover .projectContent .textoImg .titleTexto #readMoreJoeAssistant{
+    display: block;
+    color: var(--grey-background);
+    font-size: 25px;
+    transition: color 0.45s;
+}
+
+#projects .container .content .joeAssistant .projectContent .textoImg .titleTexto #readMoreJoeAssistant {
+    font-size: 35px;
+    color: var(--trafficSim);
+    content: "Coming Soon !"
+}
+
+#projects .container .content .joeAssistant:hover .projectContent .textoImg .image > img {
+    transform: scale(1.5);
+    transition: transform 0.3s;
+}
+
+#projects .container .content .joeAssistant .projectContent .textoImg .image > img {
+    transform: scale(1);
+    transition: transform 0.5s;
+}

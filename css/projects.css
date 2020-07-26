@@ -1,3 +1,11 @@
+@import "hover-projects/hover-joe.css";
+@import "hover-projects/hover-face.css";
+@import "hover-projects/hover-match.css";
+@import "hover-projects/hover-product.css";
+@import "hover-projects/hover-traffic.css";
+@import "hover-projects/hover-todo.css";
+@import "hover-projects/hover-asteyo.css";
+@import "hover-projects/hover-portfolio.css";
 
 .titleTexto h3{
     font-size: 45px;
@@ -22,7 +30,7 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 2vw;
     margin-top: 6%;
-    margin-bottom: 6%;
+    margin-bottom: 10%;
 }
 
 #projects .container .content a{
@@ -89,7 +97,7 @@
 }
 
 #projects .container .content .projectContent .textoImg .titleTexto .descripcion{
-    display: unset;
+    visibility: hidden;
 }
 
 #projects .container .content .projectContent .textoImg .titleTexto .readMore{
@@ -147,6 +155,7 @@
 
 /**               JOE ASSISTANT                 */
 /** --------------------------------------------*/
+
 #projects .container .content .joeAssistant h3{
     color: var(--joeAssistant);
 }
@@ -378,9 +387,41 @@
 /**                             MENU RESPONSIVE                       */
 /** ------------------------------------------------------------------*/
 
+@media screen and (max-width: 1650px){
 
-/** Cover text responsive on screen size */
-@media screen and (max-width: 1024px){
+    #projects .container .content .joeAssistant:hover .projectContent .textoImg .image > img, 
+    #projects .container .content .faceDetection:hover .projectContent .textoImg .image > img,
+    #projects .container .content .matchItUp:hover .projectContent .textoImg .image > img,
+    #projects .container .content .productCatalogue:hover .projectContent .textoImg .image > img,
+    #projects .container .content .trafficSim:hover .projectContent .textoImg .image > img,
+    #projects .container .content .todoList:hover .projectContent .textoImg .image > img,
+    #projects .container .content .asteyo:hover .projectContent .textoImg .image > img,
+    #projects .container .content .portfolio:hover .projectContent .textoImg .image > img{
+        transform: scale(1.15);
+    }
+
+
+}
+
+
+@media screen and (max-width: 1400px){
+
+    #projects .container .content .joeAssistant:hover .projectContent .textoImg .image > img, 
+    #projects .container .content .faceDetection:hover .projectContent .textoImg .image > img,
+    #projects .container .content .matchItUp:hover .projectContent .textoImg .image > img,
+    #projects .container .content .productCatalogue:hover .projectContent .textoImg .image > img,
+    #projects .container .content .trafficSim:hover .projectContent .textoImg .image > img,
+    #projects .container .content .todoList:hover .projectContent .textoImg .image > img,
+    #projects .container .content .asteyo:hover .projectContent .textoImg .image > img,
+    #projects .container .content .portfolio:hover .projectContent .textoImg .image > img{
+        transform: scale(1.35);
+    }
+
+    #projects .container .content .portfolio .projectContent .textoImg .image > img,
+    #projects .container .content .portfolio .projectContent .textoImg .image > img{
+        height: 40%;
+    }
+
     #projects .container .content{
         grid-template-columns: 1fr;
     }
@@ -393,21 +434,45 @@
     #projects .container .content .portfolio{
         grid-column: unset;
     }
+}
 
 
+
+@media screen and (max-width: 1024px){
+    #projects .container .content .projectContent .textoImg{
+        flex-direction: column;
+    }
+
+    #projects .container .content .projectContent .textoImg .titleTexto{
+        display: none;
+    }
+    
+    #projects .container .content .projectContent .textoImg .image {
+        transform: scale(1.2);
+        width: 100%;
+        height: 100%;
+    }
 }
 
 @media screen and (max-width: 710px){
+    #projects .container .content .projectContent .textoImg .image {
+        transform: scale(1);
+    }
 
-}
+    #projects .container .content .joeAssistant .circles .circle1,
+    #projects .container .content .matchItUp .circles .circle1,
+    #projects .container .content .productCatalogue .circles .circle1,
+    #projects .container .content .asteyo .circles .circle1,
+    #projects .container .content .portfolio .circles .circle1{
+        display: none;
+    }
 
+    #projects .container .content a{
+        height: 45vh;
+    }
 
-/**                MENU MOBILE                  */
-/** --------------------------------------------*/
-@media screen and (max-width: 600px){
-
-}
-
-@media screen and (max-width: 391px){
-
+    #projects .container .content{
+        margin-bottom: 20%;
+    }
+    
 }
