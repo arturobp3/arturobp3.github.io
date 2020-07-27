@@ -12,19 +12,37 @@
 
 .footer .linksCoverContainer {
     height: 60%;
+    width: 75vw;
+    margin-bottom: 1%;
 }
 
 .footer .credits{
+    font-size: 14px;
     height: 40%;
+    width: 75vw;
+    margin-bottom: 1%;
 }
 
 
 .footer .linksCover a img{
     height: 30px;
+    
 }
 
 
 .footer .linksCover > *{
     margin-right: 1%;
     margin-left: 1%;
+}
+
+@media screen and (max-width: 710px){
+    .footer .credits{
+        font-size: 10px;
+        margin-bottom: 5%;
+    }
+
+    .footer .linksCoverContainer {
+        margin-bottom: 2%;
+    }
+
 }

@@ -456,7 +456,7 @@
 
 @media screen and (max-width: 710px){
     #projects .container .content .projectContent .textoImg .image {
-        transform: scale(1);
+        transform: scale(1.05);
     }
 
     #projects .container .content .joeAssistant .circles .circle1,
@@ -466,6 +466,21 @@
     #projects .container .content .portfolio .circles .circle1{
         display: none;
     }
+   
+    #projects .container .content .faceDetection .projectContent .circles .circle3,
+    #projects .container .content .matchItUp .projectContent .circles .circle3,
+    #projects .container .content .productCatalogue .projectContent .circles .circle3,
+    #projects .container .content .trafficSim .projectContent .circles .circle3,
+    #projects .container .content .asteyo .projectContent .circles .circle3,
+    #projects .container .content .todoList .projectContent .circles .circle3{
+
+        clip-path: circle(120px at 70% 40%);
+    }
+
+    #projects .container .content .joeAssistant .circles .circle3,
+    #projects .container .content .portfolio .circles .circle3{
+
+    }
 
     #projects .container .content a{
         height: 45vh;
@@ -473,6 +488,7 @@
 
     #projects .container .content{
         margin-bottom: 20%;
+        grid-gap: 8vw;
     }
     
 }
