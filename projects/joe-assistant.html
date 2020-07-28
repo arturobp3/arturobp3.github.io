@@ -12,27 +12,37 @@
         <link rel="stylesheet" href="../css/common.css">
         <link rel="stylesheet" href="../css/specific-project.css">
     
-        <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+        <script type="text/javascript" src="../js/menu.js"></script>
+        <script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+        <script type="text/javascript" src="../js/home/particles.js"></script>
+        <script type="text/javascript" src="../js/home/scroll.js"></script>
 </head>
 <body data-barba="wrapper">
+    <div id="particles-js"></div>
     <div class="load-container">
         <div class="loading-screen"></div>
     </div>
     
     <main data-barba="container">
-        <div class="home-area">
-            <div class="navbarContainer">
-                <div class="navbar" id="myNavbar">
-                    <div class="logo">
-                        <a href="../" onclick="changeColor('#70ceb4')">
-                            <h4>Arturo Barbero Pérez</h4>
-                        </a>
+        <div class="project-area">
+            <div class="projectCover" id="projectCover">
+                <div class="project-info">
+                    <h1 class="animate-this"> JOE ASSISTANT</h1>
+                    <h3 class="animate-this"> Backend | Natural Language Processing </h3>
+                    <div class="description animate-this">
+                        <p>Description</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est provident voluptatum, maiores harum, soluta quos architecto numquam ea quibusdam accusamus adipisci repellendus praesentium omnis! Repudiandae tempore, odio deserunt fugit impedit et, dignissimos aspernatur modi explicabo maxime delectus ipsum facere sunt nihil aperiam ab ad incidunt omnis a illum voluptatum. Qui, dignissimos? Vel quibusdam nisi ab aperiam officia odit vero cum beatae magni, nostrum, perferendis suscipit omnis animi quam illum, exercitationem excepturi. Alias libero aut aperiam cupiditate obcaecati voluptatibus eius laboriosam placeat quidem tenetur, enim illo vero, laborum beatae! Eius, nam cupiditate dolores aperiam minima voluptate. Facilis amet facere quod dignissimos?</p>
                     </div>
+                    <div class="technologies animate-this">Python</div>
+                </div>
+                <div class="franjaColor">
                 </div>
             </div>
-            <div class="contentCover" id="contentCover">
-                <div class="titleCover animate-this">
-                    <h1> Joe Assistant</h1>
+
+
+            <div class="arrowCoverContainer"> 
+                <div class="arrowCover">
+                    <a href="#info"><img src="../icons/png/scroll-down.png"/></a>   
                 </div>
             </div>
         </div>
@@ -40,8 +50,23 @@
 
 
 </body>
-<script src="https://unpkg.com/@barba/core"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
-<script src="js/home/barba-main.js"></script>
+
+    <script type="text/javascript" src="../js/home/app.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <script src="../js/home/barba-main.js"></script>
+
+    <script>
+        /* CUANDO EL DOCUMENTO ESTÁ PREPARADO */
+        $( document ).ready(function() {
+            checkParticles("../js/home/json-particles/");
+        });
+    
+        /* CUANDO SE CAMBIE EL TAMAÑO DE PANTALLA */
+        $( window ).resize(function() {
+            checkParticles("../js/home/json-particles/");
+            closeToggleMenu();
+        });
+    </script>
 
 </html>
