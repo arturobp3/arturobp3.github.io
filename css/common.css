@@ -39,6 +39,25 @@ main{
     background-color: #4bedc2;
     width: 0%;
     height: 100%;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-screen .loading-container{
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 70%;
+    width: 70%;
+}
+
+.loading-screen .loading-container > h1{
+    opacity: 0;
+    font-size: 90px;
+    font-weight: 800;
+    color: white;
 }
 
 .load-container {
@@ -298,6 +317,10 @@ button{
     .linksCover{ width: 100%; }
     .linksCover a img{ height: 50px; }
     .arrowCoverContainer{ height: 5%; }
+
+    .loading-screen .loading-container > h1{
+        font-size: 50px;
+    }
 }
 
 

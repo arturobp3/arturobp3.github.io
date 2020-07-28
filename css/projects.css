@@ -456,14 +456,25 @@
 
 @media screen and (max-width: 710px){
     #projects .container .content .projectContent .textoImg .image {
-        transform: scale(1.05);
+        transform: scale(1.2);
     }
 
-    #projects .container .content .joeAssistant .circles .circle1,
-    #projects .container .content .matchItUp .circles .circle1,
-    #projects .container .content .productCatalogue .circles .circle1,
-    #projects .container .content .asteyo .circles .circle1,
-    #projects .container .content .portfolio .circles .circle1{
+    #projects .container .content .joeAssistant .projectContent .circles .circle1,   
+    #projects .container .content .faceDetection .projectContent .circles .circle1,
+    #projects .container .content .matchItUp .projectContent .circles .circle1,
+    #projects .container .content .productCatalogue .projectContent .circles .circle1,
+    #projects .container .content .trafficSim .projectContent .circles .circle1,
+    #projects .container .content .asteyo .projectContent .circles .circle1,
+    #projects .container .content .todoList .projectContent .circles .circle1,
+    #projects .container .content .portfolio .projectContent .circles .circle1, 
+    #projects .container .content .joeAssistant .projectContent .circles .circle2,   
+    #projects .container .content .faceDetection .projectContent .circles .circle2,
+    #projects .container .content .matchItUp .projectContent .circles .circle2,
+    #projects .container .content .productCatalogue .projectContent .circles .circle2,
+    #projects .container .content .trafficSim .projectContent .circles .circle2,
+    #projects .container .content .asteyo .projectContent .circles .circle2,
+    #projects .container .content .todoList .projectContent .circles .circle2,
+    #projects .container .content .portfolio .projectContent .circles .circle2{
         display: none;
     }
    
@@ -473,13 +484,18 @@
     #projects .container .content .trafficSim .projectContent .circles .circle3,
     #projects .container .content .asteyo .projectContent .circles .circle3,
     #projects .container .content .todoList .projectContent .circles .circle3{
-
-        clip-path: circle(120px at 70% 40%);
+        clip-path: circle(300px at 90% 1%);
     }
 
-    #projects .container .content .joeAssistant .circles .circle3,
-    #projects .container .content .portfolio .circles .circle3{
-
+    #projects .container .content .joeAssistant:hover .projectContent .circles .circle3,
+    #projects .container .content .faceDetection:hover .projectContent .circles .circle3,
+    #projects .container .content .matchItUp:hover .projectContent .circles .circle3,
+    #projects .container .content .productCatalogue:hover .projectContent .circles .circle3,
+    #projects .container .content .trafficSim:hover .projectContent .circles .circle3,
+    #projects .container .content .asteyo:hover .projectContent .circles .circle3,
+    #projects .container .content .todoList:hover .projectContent .circles .circle3,
+    #projects .container .content .portfolio:hover .projectContent .circles .circle3 {
+        clip-path: circle(0px at 50% 50%);
     }
 
     #projects .container .content a{
