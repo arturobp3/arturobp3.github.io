@@ -15,6 +15,8 @@
 
 .project-area .projectCover .project-info{
     text-align: center;
+    min-width: 60%;
+    max-width: 100%;
     width: 60%;
     display: -webkit-flex;
     flex-direction: column;
@@ -85,6 +87,8 @@
 }
 
 .project-area .projectCover .franjaColor{
+    position: fixed;
+    right: 0;
     display: -webkit-flex;
     flex-direction: column;
     justify-content: flex-end;

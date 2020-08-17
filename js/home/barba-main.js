@@ -40,13 +40,15 @@ $(function () {
             {
                 async leave(data) {
                     const done = this.async();
-
                     pageTransition();
                     await delay(1000);
                     done();
                 },
 
                 async enter(data) {
+                    $("html, body").animate({
+                        scrollTop: 0
+                    }, 0);
                     contentAnimation();
                 },
 

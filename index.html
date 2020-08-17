@@ -309,6 +309,11 @@
             checkParticles("js/home/json-particles/");
             closeToggleMenu();
         });
+
+        $( "html, body" ).scroll(function() {
+            scrollProjectArea(this);
+        });
+        
     </script>
 
 </html>

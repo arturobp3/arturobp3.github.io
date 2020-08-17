@@ -16,6 +16,7 @@ function checkParticles(path){
   particlesJS.load('particles-js', particles, function() {
       console.log('particles.js loaded - callback');
   });
+
 }
 
 
@@ -24,4 +25,21 @@ function loadingScreen(projectName, color){
     $(".loading-screen").css("background-color", color);
     $(".loading-screen .loading-container > h1").css("transition", "opacity 0.3s");
     $(".loading-screen .loading-container > h1").css("opacity", "1");
+}
+
+function scrollProjectArea(context){
+    if ($(context).scrollTop() > 0){
+        var $projectInfo = $('.project-area .projectCover .project-info');
+        var $franjaColor = $('.project-area .projectCover .franjaColor');
+        var s = $(context).scrollTop(), d = $(document).height(), c = $(context).height();
+        scrollPercent = (s / (d - c));
+
+        var positionFranjaColor = (-scrollPercent * ($(document).width() - $franjaColor.width()));
+        var positionProjectInfo = (-scrollPercent * ($(document).width() - $projectInfo.width()));
+
+        $franjaColor.css("right", positionFranjaColor);
+        $projectInfo.css("width", 55 + scrollPercent * 100 + "%");
+        console.log(($(document).width() - $projectInfo.width()))
+
+    } 
 }
