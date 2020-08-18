@@ -61,6 +61,8 @@
 .project-area .projectCover .project-info .description{
     color: var(--black);
     font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
     width: 75%;
     margin-top: -2%;
     background: var(--grey-background);
@@ -68,7 +70,7 @@
     -webkit-box-shadow: 0px 0px 12px -5px rgba(0,0,0,0.25);
     -moz-box-shadow: 0px 0px 12px -5px rgba(0,0,0,0.25);
     box-shadow: 0px 0px 12px -5px rgba(0,0,0,0.25);
-    }
+}
 
 .project-area .projectCover .project-info .title{
     color: var(--joeAssistant);
@@ -91,8 +93,8 @@
     right: 0;
     display: -webkit-flex;
     flex-direction: column;
-    justify-content: flex-end;
     align-items: center;
+    justify-content: center;
     clip-path: polygon(13% 0, 100% 0, 100% 100%, 0% 100%);
     background: var(--joeAssistant);
     height: 101%;
@@ -102,18 +104,16 @@
 .project-area .projectCover .franjaColor img{
     position: absolute;
     z-index: 0;
-    margin-bottom: 7%;
-
 }
 
 .project-area .projectCover .franjaColor .infoFranja{
+    margin-top: 75%;
     width: 70%;
     text-align: center;
     display: -webkit-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10%;
     z-index: 1;
 }
 
@@ -167,4 +167,58 @@
     width: 100%;
     bottom: 0;
     margin: 0;
+}
+
+
+/** OJO SI SE PONE justify-content: center; ESTA MUY GUAPO **/
+.projectInformation .row{ 
+    display: -webkit-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+    height: 60vh;
+}
+
+.projectInformation .row .card {
+    width: 60%;
+}
+
+.projectInformation .row .card h1{
+    position: relative;
+    font-size: 55px;
+    font-weight: 800;
+    color: white;
+    background: var(--joeAssistant);
+    padding-left: 5%;
+    padding-right: 7%;
+    clip-path: polygon(0 0, 50% 0, 53% 100%, 0% 100%);
+    z-index: 1;
+}
+
+.projectInformation .row .card .description{
+    color: var(--black);
+    font-weight: 400;
+    line-height: 1.5;
+    height: auto;
+    font-size: 20px;
+    margin-top: -1%;
+    z-index: 0;
+    background: var(--grey-background);
+    padding: 5%;
+    -webkit-box-shadow: 0px 0px 12px -5px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 12px -5px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 12px -5px rgba(0,0,0,0.25);
+}
+
+.projectInformation .challenges .card h1{
+    text-align: right;
+    padding-right: 5%;
+    padding-left: 7%;
+    z-index: -1;
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 47% 100%);
+}
+
+.projectInformation .results .card h1{
+    clip-path: polygon(0 0, 70% 0, 73% 100%, 0% 100%);
 }

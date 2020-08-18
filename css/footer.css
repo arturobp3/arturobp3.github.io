@@ -1,5 +1,6 @@
 
 .footer{
+    position: relative;
     font-weight: 500;
     color: var(--cover-hover-words);
     display: flex; 
