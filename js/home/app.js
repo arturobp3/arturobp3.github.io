@@ -39,7 +39,7 @@ function scrollProjectArea(context){
 
         $franjaColor.css("right", positionFranjaColor);
         $projectInfo.css("width", 55 + scrollPercent * 100 + "%");
-        console.log(($(document).width() - $projectInfo.width()))
+        console.log(scrollPercent)
 
     } 
 }
