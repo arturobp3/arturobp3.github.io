@@ -33,6 +33,7 @@
     width: 100%;
     padding-top: 5%;
     height: 15%;
+    min-height: 15%;
 }
 
 .project-area .projectCover .project-info .projectTitle .backLink {
@@ -89,8 +90,6 @@
 .project-area .projectCover .project-info .technologies{
     display: -webkit-flex;
     flex-direction: column;
-    align-items: center;
-    background: white;
     font-size: 20px;
     width: 75%;
     height: 25%;
@@ -111,13 +110,11 @@
 }
 
 .project-area .projectCover .franjaColor img{
-    border: 1px solid black;
     position: absolute;
     z-index: 0;
 }
 
 .project-area .projectCover .franjaColor .infoFranja{
-    border: 1px solid black;
     margin-top: 90%;
     width: 70%;
     text-align: center;
@@ -154,7 +151,8 @@
     
 }
 
-.project-area .projectCover .franjaColor .infoFranja .links .buttonLink{
+.project-area .projectCover .franjaColor .infoFranja .links .buttonLink,
+.project-area .projectCover .project-info .technologies .links .buttonLink{
     border: 1px solid var(--grey-background);
     padding: 3%;
     border-radius: 25px 25px 25px 25px;
@@ -166,6 +164,14 @@
     -webkit-box-shadow: 0px 0px 12px -5px rgba(0,0,0,1);
     -moz-box-shadow: 0px 0px 12px -5px rgba(0,0,0,1);
     box-shadow: 0px 0px 12px -5px rgba(0,0,0,1);
+}
+
+.project-area .projectCover .project-info .technologies .links .buttonLink{
+    background: var(--joeAssistant);
+    color: white;
+    font-weight: 600;
+    border: none;
+    display: none;
 }
 
 .project-area .projectCover .franjaColor .infoFranja .links a:hover{
@@ -187,8 +193,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    flex: 1;
     height: 60vh;
+}
+
+.projectInformation .row .imgNextToCard img{
+    width: auto;
 }
 
 .projectInformation .row .card {
@@ -235,6 +244,7 @@
 }
 
 
+/** RESPONSIVE */
 
 @media screen and (max-width: 1600px){
     .project-area .projectCover .project-info h1{
@@ -245,7 +255,8 @@
         font-size: 17px;
     }
 
-    .project-area .projectCover .project-info .description .info{
+    .project-area .projectCover .project-info .description .info,
+    .projectInformation .row .card .description{
         font-size: 16px;
     }
 
@@ -257,9 +268,16 @@
         margin-top: 100%;
     }
 
+    .projectInformation .row .card h1{
+        font-size: 45px;
+    }
+
+    .projectInformation .row .imgNextToCard img{
+        height: 350px;
+    }
 }
 
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1350px){
     .project-area .projectCover .project-info h1{
         font-size: 60px;
     }
@@ -268,7 +286,8 @@
         font-size: 14px;
     }
 
-    .project-area .projectCover .project-info .description .info{
+    .project-area .projectCover .project-info .description .info,
+    .projectInformation .row .card .description{
         font-size: 14px;
     }
 
@@ -291,5 +310,116 @@
     .project-area .projectCover .project-info .projectTitle .backLink{
         font-size: 50px;
         margin-right: 4%;
+    }
+
+    .projectInformation .row .card h1{
+        font-size: 35px;
+    }
+
+    .projectInformation .row .imgNextToCard img{
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .project-area .projectCover .project-info h1{
+        font-size: 50px;
+    }
+
+    .projectInformation .row .card h1{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1050px){
+
+    .projectInformation .row{
+        flex-direction: column;
+        margin-bottom: 5%;
+        height: 100%;
+    }
+
+    .projectInformation .row .card{
+        width: 65%;
+    }
+
+    .project-area .projectCover .project-info .technologies{
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .project-area .projectCover .project-info .description{
+        height: 50%;
+        width: 100%;
+    }
+
+    .projectInformation .row .imgNextToCard img{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .project-area .projectCover .franjaColor{
+        display: none;
+    }
+
+    .project-area .projectCover{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-area .projectCover .project-info{
+        width: 90%;
+    }
+
+    .project-area .projectCover .project-info .technologies{
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .project-area .projectCover .project-info .description{
+        height: 50%;
+        width: 100%;
+    }
+
+    .project-area .projectCover .project-info .technologies .links .buttonLink{
+        display: inline-block;
+    }
+
+    .project-area .arrowCoverContainer .arrowCover{
+        display: none;
+    }
+
+    
+    .projectInformation .row .imgNextToCard img{
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .project-area .projectCover .project-info h1{
+        font-size: 30px;
+    }
+
+    .project-area .projectCover .project-info h3{
+        font-size: 10px;
+    }
+
+    .project-area .projectCover .project-info .description .info,
+    .projectInformation .row .card .description{
+        font-size: 10px;
+    }
+
+    .project-area .projectCover .project-info .title{
+        font-size: 12px;
+    }
+
+    .projectInformation .row .card h1{
+        font-size: 12px;
+    }
+
+        
+    .projectInformation .row .imgNextToCard img{
+        height: 100px;
     }
 }

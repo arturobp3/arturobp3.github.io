@@ -28,18 +28,20 @@ function loadingScreen(projectName, color){
 }
 
 function scrollProjectArea(context){
-    if ($(context).scrollTop() > 0){
-        var $projectInfo = $('.project-area .projectCover .project-info');
-        var $franjaColor = $('.project-area .projectCover .franjaColor');
-        var s = $(context).scrollTop(), d = $(document).height(), c = $(context).height();
-        scrollPercent = (s / (d - c));
+    if(screen.width > 900){
+        if ($(context).scrollTop() > 0){
+            var $projectInfo = $('.project-area .projectCover .project-info');
+            var $franjaColor = $('.project-area .projectCover .franjaColor');
+            var s = $(context).scrollTop(), d = $(document).height(), c = $(context).height();
+            scrollPercent = (s / (d - c));
 
-        var positionFranjaColor = (-scrollPercent * ($(document).width() - $franjaColor.width()));
-        var positionProjectInfo = (-scrollPercent * ($(document).width() - $projectInfo.width()));
+            var positionFranjaColor = (-scrollPercent * ($(document).width() - $franjaColor.width()));
+            var positionProjectInfo = (-scrollPercent * ($(document).width() - $projectInfo.width()));
 
-        $franjaColor.css("right", positionFranjaColor);
-        $projectInfo.css("width", 55 + scrollPercent * 100 + "%");
-        console.log(scrollPercent)
+            $franjaColor.css("right", positionFranjaColor);
+            $projectInfo.css("width", 55 + scrollPercent * 100 + "%");
+            console.log(scrollPercent)
 
-    } 
+        } 
+    }
 }
