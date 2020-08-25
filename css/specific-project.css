@@ -418,7 +418,14 @@
         font-size: 12px;
     }
 
-        
+    .projectInformation .row .card {
+        width: 90%;
+    }
+
+    .project-area .projectCover .project-info .technologies .links .buttonLink{
+        font-size: 10px;
+    }
+
     .projectInformation .row .imgNextToCard img{
         height: 100px;
     }
