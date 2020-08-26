@@ -1,0 +1,14 @@
+.project-area .projectCover .project-info #titleMatch,
+.project-area .projectCover .project-info #descriptionMatch,
+.project-area .projectCover .project-info .info #titleMatch,
+.project-area .projectCover .project-info .technologies #titleMatch{
+    color: var(--matchitup);
+}
+
+.project-area .projectCover #lateralMatch,
+.project-area .projectCover .project-info .technologies .links #linkMatch,
+.projectInformation .row .card #objectivesMatch,
+.projectInformation .row .card #challengesMatch,
+.projectInformation .row .card #resultsMatch{
+    background: var(--matchitup);
+}

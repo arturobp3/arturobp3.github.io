@@ -25,7 +25,8 @@
 <body data-barba="wrapper">
     <div id="particles-js"></div>
     <div class="load-container">
-        <div class="loading-screen"></div>
+        <div class="loading-screen">
+        </div>
     </div>
     
     <main data-barba="container">
@@ -33,20 +34,20 @@
             <div class="projectCover" id="projectCover">
                 <div class="project-info">
                     <div class="projectTitle">
-                        <a class="backLink" href="../"><i class="fa fa-chevron-circle-left"></i></a>
-                        <h1 class="animate-this"> JOE ASSISTANT</h1>
+                        <a onclick="loadingScreen('#70ceb4')" class="backLink" href="../"><i class="fa fa-chevron-circle-left"></i></a>
+                        <h1 id="titleJoe" class="animate-this"> JOE ASSISTANT</h1>
                     </div>
                     <div class="abstract">
-                        <h3 class="animate-this" > Backend | Natural Language Processing </h3>
+                        <h3 id="descriptionJoe" class="animate-this" > Backend | Natural Language Processing </h3>
                     </div>
                     <div class="description animate-this">
                         <div class="info">
-                            <p class="title">Is there a way to automate people's routine tasks?</p>
+                            <p id="titleJoe" class="title">Is there a way to automate people's routine tasks?</p>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est provident voluptatum, maiores harum, soluta quos architecto numquam ea quibusdam accusamus adipisci repellendus praesentium omnis! Repudiandae tempore, odio deserunt fugit impedit et, dignissimos aspernatur modi explicabo maxime delectus ipsum facere sunt nihil aperiam ab ad incidunt omnis a illum voluptatum. Qui, dignissimos? Vel quibusdam nisi ab aperiam officia odit vero cum beatae magni, nostrum, perferendis suscipit omnis animi quam illum, exercitationem excepturi. Alias libero aut aperiam cupiditate obcaecati voluptatibus eius laboriosam placeat quidem tenetur, enim illo vero, laborum beatae! Eius, nam cupiditate dolores aperiam minima voluptate. Facilis amet facere quod dignissimos?</p>
                         </div>
                     </div>
                     <div class="technologies animate-this">
-                        <p class="title">Technologies & Techniques</p>
+                        <p id="titleJoe" class="title">Technologies & Techniques</p>
                         <div class="icons">
                             <span title="Python"><img src="https://img.icons8.com/color/60/000000/python.png"/></span>
                             <span title="Artificial Intelligence"><img src="https://img.icons8.com/dusk/60/000000/artificial-intelligence.png"/></span>
@@ -54,11 +55,11 @@
                             <span title="Spotify Web API"><img src="https://img.icons8.com/color/60/000000/spotify--v1.png"/></span>
                         </div>
                         <div class="links">
-                            <a class="buttonLink">Source code</a>
+                            <a id="linkJoe" class="buttonLink">Source code</a>
                         </div>
                     </div>
                 </div>
-                <div class="franjaColor">
+                <div id="lateralJoe" class="franjaColor">
                     <img src="../icons/png/joeAssistant4.png"/>
                     <div class=infoFranja>
                         <p class="title" id="joeAssistant">Coming Soon !</p>
@@ -71,13 +72,13 @@
             </div>
             <div class="arrowCoverContainer"> 
                 <div class="arrowCover">
-                    <a href="#info"><img src="../icons/png/scroll-down.png"/></a>   
+                    <a href="#projectInformation"><img src="../icons/png/scroll-down.png"/></a>   
                 </div>
             </div>
-            <div class="projectInformation">
+            <div id="projectInformation" class="projectInformation">
                 <div class="row objectives">
                     <div class="card">
-                        <h1>OBJECTIVES</h1>
+                        <h1 id="objectivesJoe">OBJECTIVES</h1>
                         <div class="description">
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est provident voluptatum, maiores harum, soluta quos architecto numquam ea quibusdam accusamus adipisci repellendus praesentium omnis! Repudiandae tempore, odio deserunt fugit impedit et, dignissimos aspernatur modi explicabo maxime delectus ipsum facere sunt nihil aperiam ab ad incidunt omnis a illum voluptatum. Qui, dignissimos? Vel quibusdam nisi ab aperiam officia odit vero cum beatae magni, nostrum, perferendis suscipit omnis animi quam illum, exercitationem excepturi. Alias libero aut aperiam cupiditate obcaecati voluptatibus eius laboriosam placeat quidem tenetur, enim illo vero, laborum beatae! Eius, nam cupiditate dolores aperiam minima voluptate. Facilis amet facere quod dignissimos?</p>
                         </div>
@@ -91,7 +92,7 @@
                         <img src="../icons/png/traffic2.png"/>
                     </div>
                     <div class="card">
-                        <h1>CHALLENGES</h1>
+                        <h1 id="challengesJoe">CHALLENGES</h1>
                         <div class="description">
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est provident voluptatum, maiores harum, soluta quos architecto numquam ea quibusdam accusamus adipisci repellendus praesentium omnis! Repudiandae tempore, odio deserunt fugit impedit et, dignissimos aspernatur modi explicabo maxime delectus ipsum facere sunt nihil aperiam ab ad incidunt omnis a illum voluptatum. Qui, dignissimos? Vel quibusdam nisi ab aperiam officia odit vero cum beatae magni, nostrum, perferendis suscipit omnis animi quam illum, exercitationem excepturi. Alias libero aut aperiam cupiditate obcaecati voluptatibus eius laboriosam placeat quidem tenetur, enim illo vero, laborum beatae! Eius, nam cupiditate dolores aperiam minima voluptate. Facilis amet facere quod dignissimos?</p>
                         </div>
@@ -99,7 +100,7 @@
                 </div>
                 <div class="row results">
                     <div class="card">
-                        <h1>RESULTS & LEARNING</h1>
+                        <h1 id="resultsJoe">RESULTS & LEARNING</h1>
                         <div class="description">
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est provident voluptatum, maiores harum, soluta quos architecto numquam ea quibusdam accusamus adipisci repellendus praesentium omnis! Repudiandae tempore, odio deserunt fugit impedit et, dignissimos aspernatur modi explicabo maxime delectus ipsum facere sunt nihil aperiam ab ad incidunt omnis a illum voluptatum. Qui, dignissimos? Vel quibusdam nisi ab aperiam officia odit vero cum beatae magni, nostrum, perferendis suscipit omnis animi quam illum, exercitationem excepturi. Alias libero aut aperiam cupiditate obcaecati voluptatibus eius laboriosam placeat quidem tenetur, enim illo vero, laborum beatae! Eius, nam cupiditate dolores aperiam minima voluptate. Facilis amet facere quod dignissimos?</p>
                         </div>

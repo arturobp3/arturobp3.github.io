@@ -1,4 +1,15 @@
 
+@import "projects/joe.css";
+@import "projects/face.css";
+@import "projects/match.css";
+@import "projects/product.css";
+@import "projects/traffic.css";
+@import "projects/todo.css";
+@import "projects/asteyo.css";
+@import "projects/portfolio.css";
+
+
+
 /** Contenedor portada */
 .project-area{
     position: absolute;
@@ -49,13 +60,11 @@
 .project-area .projectCover .project-info h1{
     font-size: 90px;
     font-weight: 800;
-    color: var(--joeAssistant);
     margin-right: 8%;
 }
 
 .project-area .projectCover .project-info h3{
     font-weight: 700;
-    color: var(--joeAssistant);
 }
 
 .project-area .projectCover .project-info .description{
@@ -81,7 +90,6 @@
 }
 
 .project-area .projectCover .project-info .title{
-    color: var(--joeAssistant);
     font-weight: 700;
     font-size: 25px;
     margin-bottom: 3%;
@@ -104,7 +112,6 @@
     align-items: center;
     justify-content: center;
     clip-path: polygon(13% 0, 100% 0, 100% 100%, 0% 100%);
-    background: var(--joeAssistant);
     height: 101%;
     width: 40%; 
 }
@@ -167,7 +174,6 @@
 }
 
 .project-area .projectCover .project-info .technologies .links .buttonLink{
-    background: var(--joeAssistant);
     color: white;
     font-weight: 600;
     border: none;
@@ -209,7 +215,6 @@
     font-size: 55px;
     font-weight: 800;
     color: white;
-    background: var(--joeAssistant);
     padding-left: 5%;
     padding-right: 7%;
     clip-path: polygon(0 0, 50% 0, 53% 100%, 0% 100%);

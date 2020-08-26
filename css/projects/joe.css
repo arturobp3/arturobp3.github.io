@@ -1,0 +1,15 @@
+.project-area .projectCover .project-info #titleJoe,
+.project-area .projectCover .project-info #descriptionJoe,
+.project-area .projectCover .project-info .info #titleJoe,
+.project-area .projectCover .project-info .technologies #titleJoe{
+    color: var(--joeAssistant);
+}
+
+.project-area .projectCover #lateralJoe,
+.project-area .projectCover .project-info .technologies .links #linkJoe,
+.projectInformation .row .card #objectivesJoe,
+.projectInformation .row .card #challengesJoe,
+.projectInformation .row .card #resultsJoe{
+    background: var(--joeAssistant);
+}
+

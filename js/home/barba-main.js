@@ -21,14 +21,14 @@ function pageTransition() {
         width: "100%",
         left: "100%",
         ease: "Expo.easeInOut",
-        delay: 0.5,
+        delay: 0.2,
     });
     tl.set(".loading-screen", { left: "-100%" });
 }
 
 function contentAnimation() {
     var tl = gsap.timeline();
-    tl.from(".animate-this", { duration: 1, y: 40, opacity: 0, stagger: 0.3, delay: 0.05 });
+    tl.from(".animate-this", { duration: 1, y: 40, opacity: 0, stagger: 0.1, delay: 0.05 });
 }
 
 $(function () {

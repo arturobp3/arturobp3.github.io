@@ -1,0 +1,14 @@
+.project-area .projectCover .project-info #titleFace,
+.project-area .projectCover .project-info #descriptionFace,
+.project-area .projectCover .project-info .info #titleFace,
+.project-area .projectCover .project-info .technologies #titleFace{
+    color: var(--faceDetection);
+}
+
+.project-area .projectCover #lateralFace,
+.project-area .projectCover .project-info .technologies .links #linkFace,
+.projectInformation .row .card #objectivesFace,
+.projectInformation .row .card #challengesFace,
+.projectInformation .row .card #resultsFace{
+    background: var(--faceDetection);
+}
