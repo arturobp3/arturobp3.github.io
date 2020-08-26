@@ -5,7 +5,7 @@
     color: var(--productCatalog);
 }
 
-/*.project-area .projectCover #lateralProduct,*/
+.project-area .projectCover #lateralProduct,
 .project-area .projectCover .project-info .technologies .links #linkProduct,
 .projectInformation .row .card #objectivesProduct,
 .projectInformation .row .card #challengesProduct,
