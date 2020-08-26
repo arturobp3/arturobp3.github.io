@@ -1,0 +1,14 @@
+.project-area .projectCover .project-info #titleTodo,
+.project-area .projectCover .project-info #descriptionTodo,
+.project-area .projectCover .project-info .info #titleTodo,
+.project-area .projectCover .project-info .technologies #titleTodo{
+    color: var(--todoList);
+}
+
+.project-area .projectCover #lateralTodo,
+.project-area .projectCover .project-info .technologies .links #linkTodo,
+.projectInformation .row .card #objectivesTodo,
+.projectInformation .row .card #challengesTodo,
+.projectInformation .row .card #resultsTodo{
+    background: var(--todoList);
+}

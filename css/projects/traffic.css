@@ -1,0 +1,14 @@
+.project-area .projectCover .project-info #titleTraffic,
+.project-area .projectCover .project-info #descriptionTraffic,
+.project-area .projectCover .project-info .info #titleTraffic,
+.project-area .projectCover .project-info .technologies #titleTraffic{
+    color: var(--trafficSim);
+}
+
+.project-area .projectCover #lateralTraffic,
+.project-area .projectCover .project-info .technologies .links #linkTraffic,
+.projectInformation .row .card #objectivesTraffic,
+.projectInformation .row .card #challengesTraffic,
+.projectInformation .row .card #resultsTraffic{
+    background: var(--trafficSim);
+}

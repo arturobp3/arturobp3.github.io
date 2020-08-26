@@ -1,0 +1,14 @@
+.project-area .projectCover .project-info #titlePortfolio,
+.project-area .projectCover .project-info #descriptionPortfolio,
+.project-area .projectCover .project-info .info #titlePortfolio,
+.project-area .projectCover .project-info .technologies #titlePortfolio{
+    color: var(--portfolio);
+}
+
+.project-area .projectCover #lateralPortfolio,
+.project-area .projectCover .project-info .technologies .links #linkPortfolio,
+.projectInformation .row .card #objectivesPortfolio,
+.projectInformation .row .card #challengesPortfolio,
+.projectInformation .row .card #resultsPortfolio{
+    background: var(--portfolio);
+}

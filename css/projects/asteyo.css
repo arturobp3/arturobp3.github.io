@@ -1,0 +1,14 @@
+.project-area .projectCover .project-info #titleAsteyo,
+.project-area .projectCover .project-info #descriptionAsteyo,
+.project-area .projectCover .project-info .info #titleAsteyo,
+.project-area .projectCover .project-info .technologies #titleAsteyo{
+    color: var(--asteyo);
+}
+
+.project-area .projectCover #lateralAsteyo,
+.project-area .projectCover .project-info .technologies .links #linkAsteyo,
+.projectInformation .row .card #objectivesAsteyo,
+.projectInformation .row .card #challengesAsteyo,
+.projectInformation .row .card #resultsAsteyo{
+    background: var(--asteyo);
+}
