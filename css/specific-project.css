@@ -359,6 +359,11 @@
     .projectInformation .row .imgNextToCard img{
         height: 300px;
     }
+
+    .project-area .projectCover .project-info .technologies .links .buttonLink{
+        font-size: 15px;
+        padding: 2%;
+    }
 }
 
 @media screen and (max-width: 900px){
@@ -396,6 +401,10 @@
     
     .projectInformation .row .imgNextToCard img{
         height: 200px;
+    }
+
+    .project-area .projectCover .project-info .technologies .links .buttonLink{
+        font-size: 10px;
     }
 }
 
