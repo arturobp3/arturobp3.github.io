@@ -14,56 +14,6 @@
 }
 
 
-/*#projectInformationJoe .row{
-    align-items: flex-start;
-    height: fit-content;
-}
-
-#projectInformationJoe .row .card{
-    width: 80%;
-}
-#projectInformationJoe .objectives{
-    margin-top: 5%;
-    margin-bottom: 3%;
-}
-
-#projectInformationJoe .objectives .card{
-    border: 1px solid black;
-    display: -webkit-flex;
-    flex-direction: row;
-}
-
-#projectInformationJoe .objectives .card h1{
-    clip-path: unset;
-    width: 30%;
-    border:1px solid black;
-    display: -webkit-flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#projectInformationJoe .objectives .card .description{
-    margin-top: unset;
-    width: 100%;
-}
-
-#projectInformationJoe .challenges .card h1{
-    clip-path: unset;
-    border:1px solid black;
-}
-
-#projectInformationJoe .challenges .imgNextToCard{
-    border: 1px solid black;
-    display: -webkit-flex;
-    flex-direction: column;
-    width: 45%;
-}
-
-#projectInformationJoe .row .imgNextToCard img{
-    height: auto;
-    width: 100%;
-}*/
-
 #projectInformationJoe .objectives{
     margin-top: 5%;
 }

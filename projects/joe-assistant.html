@@ -72,7 +72,7 @@
                             <span title="Git"><img src="https://img.icons8.com/color/60/000000/git.png"/></span>
                         </div>
                         <div class="links">
-                            <a id="linkJoe" class="buttonLink">Source code</a>
+                            <a href="https://github.com/arturobp3/Joe_Assistant" target="_blank" id="linkJoe" class="buttonLink">Source code</a>
                         </div>
                     </div>
                 </div>
@@ -82,7 +82,7 @@
                         <p class="title" id="joeAssistant">Coming Soon !</p>
                         <p>Meanwhile, check out the first version on GitHub </p>
                         <div class="links">
-                            <a class="buttonLink">Source code</a>
+                            <a href="https://github.com/arturobp3/Joe_Assistant" target="_blank" class="buttonLink">Source code</a>
                         </div>
                     </div>
                 </div>
@@ -97,7 +97,9 @@
                     <div class="card">
                         <h1 id="objectivesJoe">OBJECTIVES</h1>
                         <div class="description">
-                            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, officiis nemo expedita nisi deleniti quo sint corrupti minima unde vel aliquid perferendis qui rem in adipisci libero voluptatibus repellat perspiciatis distinctio. Accusamus minus et deleniti temporibus aspernatur rerum dicta debitis, cumque maiores, accusantium officiis modi iure veniam nulla! Eius vitae voluptates suscipit quas rerum repellat error modi aut doloribus labore placeat non incidunt ipsa dignissimos fugit, facere temporibus cum quibusdam inventore maxime? Iusto, perspiciatis illum? </p>
+                            <p> One of the main objectives is to be able to automate any routine task a person may have on a daily basis. Some examples are: <strong>playing music</strong>, <strong>setting reminders</strong>, <strong>controlling our house lights</strong>, <strong>searching information on Google</strong> and even being able to <strong>interact with our WhatsApp account</strong>.</p>
+                            </br>
+                            <p>In the long term, I'd like the project to be <strong>Open Source</strong> so that each developer can easily add modules by adding the functionalities they want. Therefore, it is really important to define a clear architecture.</p>
                         </div>
                     </div>
                     <div class="imgNextToCard">
@@ -112,7 +114,20 @@
                     <div class="card">
                         <h1 id="challengesJoe">CHALLENGES</h1>
                         <div class="description">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum itaque placeat debitis, veritatis odio tempora aperiam iste mollitia rem excepturi error. Quo incidunt earum atque obcaecati et illum id blanditiis voluptatem cum, odit esse quia quod numquam aspernatur nemo tenetur expedita suscipit? Veritatis, minus! Delectus animi eum et nobis ducimus non numquam laborum hic, ad provident earum tenetur aperiam ipsum commodi dignissimos magnam ex. Saepe eligendi vero error ducimus natus repudiandae corrupti aut commodi quaerat, nemo temporibus! Nesciunt error velit cupiditate saepe culpa tempore tempora aut possimus asperiores dolore minima inventore voluptatem distinctio, itaque at fugit. Dicta adipisci quidem amet repudiandae praesentium quisquam laborum quam explicabo possimus ad officia repellat, aperiam molestiae ullam inventore error nobis. Delectus voluptas iste enim debitis eligendi quam nostrum est, earum porro inventore fugiat error ab vel explicabo nisi ut fugit minus veniam nihil optio eveniet. Cupiditate eligendi qui ducimus. Fuga necessitatibus modi at itaque ad ipsam voluptatibus repellendus vero molestias eos earum error asperiores quaerat non omnis tempore eligendi atque ratione, cum, libero tenetur. Expedita ab cupiditate vel velit? Magnam iure magni itaque voluptas assumenda accusantium quos veniam eaque, fugiat, consequuntur deserunt alias adipisci, expedita atque! Ut perferendis eius nemo ducimus, nisi hic et. Possimus dolores, nesciunt culpa minus incidunt veritatis delectus labore? Ad reiciendis necessitatibus, tempore minima accusantium ea at, labore, officiis ex inventore dignissimos. Nisi minima blanditiis repellendus soluta nesciunt sint error officiis a delectus qui autem eveniet magni, perspiciatis numquam fugiat optio ut harum placeat necessitatibus eum alias asperiores repellat voluptas! Consequatur ea modi rerum accusantium ratione aut animi quos officia, optio placeat unde itaque veniam earum dolorem debitis voluptate excepturi officiis voluptatum! Maiores nulla possimus ducimus! Inventore quisquam deserunt quae, explicabo neque iure esse sapiente necessitatibus sunt aspernatur nam aliquam ratione quo eaque ad molestiae dolorum accusamus officiis dolor vitae. </p>
+                            <p> The first challenge I faced with this project was to know what was the flow of interaction between a person and the assistant, to look for the necessary tools and to implement it in a simple way to make tests. When I understood the flow, I realized that
+                                there were only two ways to interact with Joe: by clicking a button (that it would be a simple but tedious task for the user) or by <strong>waking up the assistant with your own voice</strong>. </p>
+                            </br>
+                            <p> At this point, I decided to implement the first option to check that everything was working properly and then research how could I implement the second one, by developing what is known as <strong>"hotword detection"</strong>. </p>
+                            </br>
+                            <p> In that second approach, I was using the Google API to be able to go from voice to text (and vice versa), and that was becoming a problem. Whenever I tried to activate Joe, it was being activated late because everything was being
+                                processed on remote servers and <strong>the latency was affecting</strong>. So, I needed a way to process the user's petition locally. </p>
+                            </br>
+                            <p> I came up with two different ideas. On the one hand, trying to create a neural network that was able to detect the word "Joe". And, on the other hand, trying to <strong>analyze the audio signal</strong> to know if the hotword was activated.  </p>
+                            </br>
+                            <p>I ended up choosing the second option, since it was <strong> the best in terms of performance and development time </strong>. Also, I was lucky enough to find a library that made this process much easier, so I only had to learn a few basics 
+                                about audio signal processing to be able to implement it.</p>
+                            </br>
+                            <p> In the graphics you can see some examples of how calls to Joe are captured quite well regardless of the background noise.</p>
                         </div>
                     </div>
                 </div>
