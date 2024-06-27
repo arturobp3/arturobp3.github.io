@@ -156,7 +156,7 @@
 /**               JOE ASSISTANT                 */
 /** --------------------------------------------*/
 
-#projects .container .content .joeAssistant h3{
+/*#projects .container .content .joeAssistant h3{
     color: var(--joeAssistant);
 }
 
@@ -165,8 +165,6 @@
 }
 
 #projects .container .content .joeAssistant{
-    width: 75vw;
-    grid-column: 1/3;
     z-index: 0;
 }
 
@@ -188,11 +186,33 @@
 #projects .container .content .joeAssistant .circles .circle3{
     background: var(--joeAssistant);
     clip-path: circle(300px at 90% 1%);
+}*/
+
+#projects .container .content .joeAssistant h3{
+    color: var(--joeAssistant);
 }
 
+#projects .container .content .joeAssistant p{
+    color: var(--grey-background);
+}
 
-#projects .container .content .joeAssistant .projectContent .textoImg .titleTexto #readMoreJoeAssistant{
-    display: block;
+#projects .container .content .joeAssistant {
+    z-index: 0;
+}
+
+#projects .container .content .joeAssistant .circles .circle1{
+    background: var(--joeAssistant);
+    clip-path: circle(20px at 50% 20%);
+}
+
+#projects .container .content .joeAssistant .circles .circle2{
+    background: var(--joeAssistant);
+    clip-path: circle(25px at 20% 80%);
+}
+
+#projects .container .content .joeAssistant .circles .circle3{
+    background: var(--joeAssistant);
+    clip-path: circle(120px at 81% 40%);
 }
 
 
