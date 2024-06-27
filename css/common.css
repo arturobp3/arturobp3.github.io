@@ -240,7 +240,7 @@ button{
     height: 150px; /* Ajusta la altura de la imagen según tus necesidades */
     border-radius: 50%; /* Hace que la imagen tenga bordes redondos */
     overflow: hidden; /* Asegura que el contenido se recorte si es necesario */
-    object-fit: cover; /* Asegura que la imagen se recorte y mantenga sus proporciones */
+    object-fit: cover; 
     border: 5px solid var(--todoList);
 }
 
