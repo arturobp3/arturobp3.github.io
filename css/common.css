@@ -218,6 +218,7 @@ button{
     justify-content: space-between;
     height: 90%;
     width: 100vw;
+    border: 1px solid black;
 }
 
 .titleCover{
@@ -226,18 +227,19 @@ button{
     justify-content: center;
     height: 90%;
     width: 100vw;
+    border: 1px solid black;
 }
 
 /**            Letras de la portada             */
 /** --------------------------------------------*/
 .infoCover{
-    padding: 2% 0% 2% 0%;
+    padding: 0% 0% 2% 0%;
     text-align: center;
 }
 
 .infoCover #me-cover {
-    width: 150px;  /* Ajusta el ancho de la imagen según tus necesidades */
-    height: 150px; /* Ajusta la altura de la imagen según tus necesidades */
+    width: 120px;  /* Ajusta el ancho de la imagen según tus necesidades */
+    height: 120px; /* Ajusta la altura de la imagen según tus necesidades */
     border-radius: 50%; /* Hace que la imagen tenga bordes redondos */
     overflow: hidden; /* Asegura que el contenido se recorte si es necesario */
     object-fit: cover; 
