@@ -1,0 +1,45 @@
+/*ABOUT*/
+.content-about {
+    width: 75vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw;
+    border: 1px solid black;
+    margin-top: 6%;
+    margin-bottom: 3%;
+}
+
+
+.content-about .image {
+    border: 1px solid black;
+}
+
+
+.content-about .image #image-about {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px 25px 25px 25px;
+    -moz-border-radius: 25px 25px 25px 25px;
+    -webkit-border-radius: 25px 25px 25px 25px;
+}
+
+/* Botón de descarga centrado */
+.button-container {
+    text-align: center;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    background-color: var(--todoList);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #26528e;
+}

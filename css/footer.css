@@ -8,20 +8,21 @@
     align-items: center; 
     justify-content: center; 
     text-align: center;
-    height: 10%;
+    height: 15%;
 }
 
 .footer .linksCoverContainer {
     height: 60%;
     width: 75vw;
     margin-bottom: 1%;
+    margin-top: 3%;
 }
 
 .footer .credits{
     font-size: 14px;
     height: 40%;
     width: 75vw;
-    margin-bottom: 1%;
+    margin-bottom: 3%;
 }
 
 

@@ -163,6 +163,7 @@ button{
     display: none;
 }
 
+
 /** MENU LATERAL RESPONSIVE */
 .home-area .mySidebar {
     color: var(--grey-background);
