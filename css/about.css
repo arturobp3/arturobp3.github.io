@@ -4,18 +4,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 2vw;
-    border: 1px solid black;
     margin-top: 6%;
     margin-bottom: 3%;
 }
 
 
-.content-about .image {
-    border: 1px solid black;
-}
-
 .content-about .text {
-    border: 1px solid black;
     text-align: justify;
     display: grid;
     place-items: center; /* Centra horizontal y verticalmente */
@@ -49,4 +43,13 @@
 
 .download-btn:hover {
     background-color: #26528e;
+}
+
+
+@media screen and (max-width: 1400px){
+
+    .content-about {
+        grid-template-columns: 1fr;
+
+    }
 }
