@@ -14,6 +14,13 @@
     border: 1px solid black;
 }
 
+.content-about .text {
+    border: 1px solid black;
+    text-align: justify;
+    display: grid;
+    place-items: center; /* Centra horizontal y verticalmente */
+}
+
 
 .content-about .image #image-about {
     position: relative;

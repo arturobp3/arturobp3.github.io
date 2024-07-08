@@ -22,11 +22,9 @@
     flex-direction: column;
     margin: 0 auto;
     width: 75vw;
-    border: 1px solid black;
 }
 
 #projects .container .sectionTitle {
-    border: 1px solid black;
     padding: 3% 0% 2% 0%;
     font-size: 6.3em;
     text-align: center;
@@ -39,7 +37,6 @@
     grid-gap: 2vw;
     margin-top: 6%;
     margin-bottom: 10%;
-    border: 1px solid black;
 }
 
 #projects .container .content a{

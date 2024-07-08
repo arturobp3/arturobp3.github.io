@@ -219,7 +219,6 @@ button{
     justify-content: space-between;
     height: 90%;
     width: 100vw;
-    border: 1px solid black;
 }
 
 .titleCover{
@@ -228,7 +227,6 @@ button{
     justify-content: center;
     height: 90%;
     width: 100vw;
-    border: 1px solid black;
 }
 
 /**            Letras de la portada             */
